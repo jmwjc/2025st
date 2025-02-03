@@ -4,7 +4,7 @@
 
 \subsection{研究方法与技术路线}
 
-本项目拟采用理论推导结合数值验证的方法进行研究，
+本项目将采用理论推导结合数值验证的方法进行研究，
 首先，
 
 具体的技术路线图如下所示。
@@ -12,13 +12,75 @@
 \subsection{研究方案}
 
 \subsubsection*{\bfseries （1）适用于任意节点离散的时域末端虚位移本质边界条件施加方案}
+首先，查阅基于哈密顿变分原理时空混合离散有限元法的相关文献，确定虚位移本质边界条件的几种可能性。
+将不同虚位移边界的方法进行数值实现，对比计算结果的稳定性和精度。
+确定稳定性最优情况下的虚位移空间$\tilde V_h$，相对应的变分问题为：
+\begin{equation}
+    \text{find} \; u_h \in V_h, \quad a(u_h, \delta u_h) = f(\delta u_h), \quad \forall \delta u_h \in \tilde V_h
+    \label{eq:1}
+\end{equation}
+其中，$V_h$为位移空间。
+
+随后，将式\eqref{eq:1}中的虚位移$\delta u_h$作为拉格朗日乘子，设计全新拉格朗日乘子型能量泛函：
+\begin{equation}
+    \text{find} \; u_h \in V_h,\; p_h \in \tilde V_h, \quad
+    \left \{
+    \begin{split} 
+        a(u_h, \delta u_h) - a(p_h, \delta u_h) = 0,\quad &\forall \delta u_h \in V_h \\
+        - a(u_h, \delta p_h) = f(\delta p_h),\quad &\forall \delta p_h \in \tilde V_h
+    \end{split}
+    \right .
+    \label{eq:2}
+\end{equation}
+从上式可以看出，原本式\eqref{eq:1}中的变分问题作为约束条件施加在拉格朗日乘子型伽辽金问题的弱形式中，需进一步在验证两者之间的等价性。
+同时，引入分部积分公式对式\eqref{eq:2}进行推导，通过修正$u_h$和$p_h$的边界条件，使所提的拉格朗日乘子型伽辽金弱形式满足变分一致性，并证明其与欧拉--拉格朗日方程等价。
+
+最后，采用均布的有限元离散从数值上与传统方法进行对比，验证其计算精度。并用分均布节点离散验证所提方法求解的稳定性。
 
 \subsubsection*{\bfseries （2）适用于波动方程的稳定再生核无网格近似方案}
+首先，借鉴von Neumann稳定性分析方法，在拉格朗日型能量泛函所对应的离散控制方程中引入特征解的傅立叶展开式。
+同时引入无网格形函数一致性条件，推导均布节点离散下离散控制方程中通用行的局部截断误差估计$\epsilon$，
+$\epsilon$应包含时间域节点间距$\Delta t$和空间域节点间距$\Delta x$相关的余项：
+\begin{equation}
+    \epsilon = O(\Delta t^{n_t}) + O(\Delta x^{n_x})
+\end{equation}
+其中，$n_t$和$n_x$分别为时间域和空间域的离散阶次。根据截断误差估计，确定空间域离散阶次为$n_x$时，消除数值色散影响所需的时间域离散阶次$n_t$。
 
+随后，在再生核无网格近似的理论框架下，构造相对应阶次的无网格近似基向量$\boldsymbol p^{[n_x,n_t]}$：
+\begin{equation}
+    \boldsymbol p^{[n_x,n_t]}(x,t) = \left \{1, x, t, x^2, xt, t^2, \dots, x^{n_x}, x^{n_x-1}t, \dots, t^{n_t} \right \}^T
+\end{equation}
+并根据无网格形函数中矩量矩阵的可逆性，确定核函数影响域在时间维度和空间维度包含节点的个数。
+
+% \begin{figure}[H]
+%     \centering
+    
+% \end{figure}
+
+最后，通过数值验证所提混合离散再生核无网格近似的一致性条件。并代入所提拉格朗日型能量泛函，通过时间域、空间域不同比例节点间距和非均布节点离散测试其是否缓解数值色散问题。
 
 \subsubsection*{\bfseries （3）时空混合离散下变分一致型伽辽金无网格数值积分方案}
+首先，根据时空混合离散无网格近似中基向量的元素，推导拉格朗日型伽辽金弱形式的积分约束条件。
+引入再生光滑梯度理论框架，构建满足满足积分约束条件无网格形函数再生光滑梯度，以形函数的一阶时间光滑导数为例，其表达式为：
+\begin{equation}
+    \tilde \Psi_{I,t}(\boldsymbol x) = \boldsymbol p^{[n_x,n_t - 1]}(\boldsymbol x) \boldsymbol G^{ - 1} \boldsymbol g_{tI}
+\end{equation}
+其中，$\boldsymbol G$为矩量矩阵，$\boldsymbol g_{tI}$为积分约束条件。再生光滑梯度能自动满足积分约束条件，适用于相对应阶次的高斯积分方案。
+
+随后，为进一步提升计算效率，将根据再生光滑梯度的一致性条件和数值积分点在单元间的共享特性，优化数值积分点的位置和权重，减少全局数值积分点数量。特别是针对四维空间，拟采用四面体柱或六面体柱单元作为背景积分域进行数值积分，构建适合时空混合离散再生光滑梯度积分法的数值积分方案。
+
+% \begin{figure}[H]
+%     \centering
+    
+% \end{figure}
+
+最后，通过分片试验验证所提数值积分方案是否满足变分一致性，同时利用典型波动问题测试其计算精度。
 
 \subsubsection*{\bfseries （4）绝对时空混合离散伽辽金无网格分析方法}
 
 \subsection{可行性分析}
+
+初步测试
+
+前期研究支持
 
