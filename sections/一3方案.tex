@@ -19,20 +19,21 @@
     \text{find} \; u_h \in V_h, \quad a(u_h, \delta u_h) = f(\delta u_h), \quad \forall \delta u_h \in \tilde V_h
     \label{eq:1}
 \end{equation}
-其中，$V_h$为位移空间。
+其中，$V_h$为位移空间，$a:V\times V \rightarrow \mathbb R$为双线性算子，$f:V\rightarrow \mathbb R$为线性算子。
 
 随后，将式\eqref{eq:1}中的虚位移$\delta u_h$作为拉格朗日乘子，设计全新拉格朗日乘子型能量泛函：
 \begin{equation}
     \text{find} \; u_h \in V_h,\; p_h \in \tilde V_h, \quad
     \left \{
     \begin{split} 
-        a(u_h, \delta u_h) - a(p_h, \delta u_h) = 0,\quad &\forall \delta u_h \in V_h \\
-        - a(u_h, \delta p_h) = f(\delta p_h),\quad &\forall \delta p_h \in \tilde V_h
+        -a(u_h, \delta u_h) + a(p_h, \delta u_h) = 0,\quad &\forall \delta u_h \in V_h \\
+        a(u_h, \delta p_h) = f(\delta p_h),\quad &\forall \delta p_h \in \tilde V_h
     \end{split}
     \right .
     \label{eq:2}
 \end{equation}
 从上式可以看出，原本式\eqref{eq:1}中的变分问题作为约束条件施加在拉格朗日乘子型伽辽金问题的弱形式中，需进一步在验证两者之间的等价性。
+当等价性成立，仅需要采用常规方法对$p_h$施加本质边界条件，即可实现式\eqref{eq:1}中施加虚位移本质边界条件的效果。
 同时，引入分部积分公式对式\eqref{eq:2}进行推导，通过修正$u_h$和$p_h$的边界条件，使所提的拉格朗日乘子型伽辽金弱形式满足变分一致性，并证明其与欧拉--拉格朗日方程等价。
 
 最后，采用均布的有限元离散从数值上与传统方法进行对比，验证其计算精度。并用分均布节点离散验证所提方法求解的稳定性。
@@ -61,7 +62,7 @@ $\epsilon$应包含时间域节点间距$\Delta t$和空间域节点间距$\Delt
 
 \subsubsection*{\bfseries （3）时空混合离散下变分一致型伽辽金无网格数值积分方案}
 首先，根据时空混合离散无网格近似中基向量的元素，推导拉格朗日型伽辽金弱形式的积分约束条件。
-引入再生光滑梯度理论框架，构建满足满足积分约束条件无网格形函数再生光滑梯度，以形函数的一阶时间光滑导数为例，其表达式为：
+引入申请人所提出的再生光滑梯度理论框架，构建满足满足积分约束条件无网格形函数再生光滑梯度，以形函数的一阶时间光滑导数为例，其表达式为：
 \begin{equation}
     \tilde \Psi_{I,t}(\boldsymbol x) = \boldsymbol p^{[n_x,n_t - 1]}(\boldsymbol x) \boldsymbol G^{ - 1} \boldsymbol g_{tI}
 \end{equation}
@@ -76,7 +77,26 @@ $\epsilon$应包含时间域节点间距$\Delta t$和空间域节点间距$\Delt
 
 最后，通过分片试验验证所提数值积分方案是否满足变分一致性，同时利用典型波动问题测试其计算精度。
 
-\subsubsection*{\bfseries （4）绝对时空混合离散伽辽金无网格分析方法}
+\subsubsection*{\bfseries （4）任意节点分布时空混合离散伽辽金无网格分析方法}
+首先，将时空混合离散再生核无网格形函数及其光滑梯度引入拉格朗日乘子型伽辽金弱形式\eqref{eq:1}中，并采用优化的伽辽金无网格数值积分方案进行积分，得到相应的离散控制方程。
+由式\eqref{eq:1} 可知，所提时空混合离散伽辽金弱形式中双线性算子均为同一算子，区别在于变量$u_h$和$p_h$所处的空间不一致。
+造成空间不一致的原因在于$u_h$和$p_h$的本质边界条件不一致。当$u_h$和$p_h$采用相同的近似方式进行离散时，单独将施加本质边界条件部分的刚度矩阵分出，可得到如下所示离散控制方程：
+\begin{equation}
+    \begin{bmatrix} 
+        \boldsymbol K + \boldsymbol K_{u} & \boldsymbol K \\
+        \boldsymbol K & \boldsymbol K_{p} 
+    \end{bmatrix} 
+    \begin{Bmatrix}
+        \boldsymbol u \\ \boldsymbol p
+    \end{Bmatrix} =
+    \begin{Bmatrix} \boldsymbol f_u \\ \boldsymbol f + \boldsymbol f_p \end{Bmatrix}
+    \label{eq:3} 
+\end{equation}
+其中，$\boldsymbol K_u$和$\boldsymbol f_u$、$\boldsymbol K_p$和$\boldsymbol f_p$分别为施加与$u_h$和$p_h$相关的本质边界条件刚度矩阵和力向量。式\eqref{eq:3}中，刚度矩阵$\boldsymbol K$重复在三个地方使用，将利用该特点优化程序结构，降低内存开销。
+
+同时，$u_h$与$p_h$的本质边界条件需要采用满足伽辽金法变分一致性的施加方案进行施加。本项目将在申请人所提基于Hellinger--Reissner原理伽辽金无网格本质边界条件施加方案的基础上，研究适用于拉格朗日乘子型时空混合离散伽辽金弱形式的变分一致型施加方案，确保全域的变分一致性。
+
+随后，为进一步提升稳定性，将引入基于位移解梯度变化的自适应节点加密方案，对波的传播动态进行精确捕捉。同时，在求解离散控制方程时，拟嵌入基于Krylov子空间法的并行计算库，对程序进行提速。最后，通过典型波动问题和实际工程算例验证所提方法的有效性和可靠性。
 
 \subsection{可行性分析}
 

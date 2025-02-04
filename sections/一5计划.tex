@@ -1,23 +1,31 @@
 \subsection{年度研究计划}
-本项目的年度研究计划如下：
+本项目围绕拟定的研究目标，通过理论推导和数值验证的方法研究任意节点分布的时空混合离散伽辽金无网格法。
+根据各部分研究内容的逻辑关系，制定了表\ref{tb:plan}所示的项目的年度计划表。
+其中，成果整理、论文发表及年度报告贯穿执行期。
+项目参与人执行期内计划参加学术会议并作项目相关报告不少于每年2人次。
 
-% \textbf{2026年1月 -- 2026年12月:}
-% 研究适用于任意节点离散的时域末端虚位移本质边界条件施加方案，
-% 本年度计划参加国内学术会议2人次。
-
-% \textbf{2027年1月 -- 2027年12月:}
-
-% \textbf{2028年1月 -- 2028年12月:}
-
-% \textbf{2029年1月 -- 2029年12月:}
-\begin{table}[h!]
-\caption{年度研究计划}
+\begin{table}[!h]
+\caption{年度研究计划表}\label{tb:plan}
 \centering
 \begin{ganttchart}[
-    x unit=8pt,
-    vgrid,
+    % inline,
+    % bar inline label anchor = north,
+    include title in canvas=false,
+    x unit = 8pt,
+    y unit title = 14pt,
+    hgrid={*1{draw=black!5, line width=.75pt}},
+    vgrid={*1{draw=black!5, line width=.75pt}},
+    canvas/.append style={fill=none,draw=black!20,line width=.75pt},
+    title/.style={draw=black!5, fill=none},
+    title height=1,
+    bar height = 0.3,
+    group height=.1,
+    % title label node/.append style={below=0pt},
     newline shortcut=true,
-    bar label node/.append style={align=left}
+    % bar label node/.append style={align=left, anchor=north},
+    bar/.append style={fill=blue!50, rounded corners=4pt, draw=none},
+    group label node/.append style={align=left, left=-.5cm, text width=17em},
+    bar label node/.append style={left=0cm,align=left,text width=15em},
 ]{1}{32}
     \gantttitle{2026}{8}
     \gantttitle{2027}{8}
@@ -31,16 +39,19 @@
     \gantttitle{下半年}{4}
     \gantttitle{上半年}{4}
     \gantttitle{下半年}{4} \\
-    \ganttgroup{研究内容(1)}{1}{4} \\
-    \ganttbar{时域末端虚位移本质边界条件施加方案}{1}{4} \\
-    \ganttbar{时空混合离散误差估计}{1}{4} \\
-    \ganttbar{时空混合离散误差估计}{1}{4} \\
-    \ganttbar{成果整理、论文发表、\\软件著作权申请、年度\\报告及项目结题报告}{5}{32} \\
-    % \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-    % \ganttmilestone{Milestone}{7} \ganttnewline
-    % \ganttbar{Final Task}{8}{12}
-    % \ganttlink{elem2}{elem3}
-    % \ganttlink{elem3}{elem4}
+    \ganttgroup{\bfseries 研究内容（1）}{1}{8} \\
+    \ganttbar{查阅相关文献，测试不同虚位移边界条件时空混合离散伽辽金法性能}{1}{4}\\
+    \ganttbar[name=scheme1]{研究拉格朗日乘子型时域末端虚位移本质边界条件施加方案}{3}{8}\\
+    \ganttgroup{\bfseries 研究内容（2）}{9}{20} \\
+    \ganttbar[name=error]{推导稳定性分析局部截断误差估计}{9}{20} \\
+    \ganttbar[name=scheme2]{构建时空混合离散再生核近似方案}{13}{16} \\
+    \ganttgroup{\bfseries 研究内容（3）}{17}{26} \\
+    \ganttbar[name=scheme3]{推导时空混合离散再生光滑梯度}{17}{24} \\
+    \ganttbar[name=scheme4]{优化四维积分域再生光滑梯度积分方案}{21}{26} \\
+    \ganttgroup{\bfseries 研究内容（4）}{21}{28} \\
+    \ganttbar[name=method]{构建时空混合离散伽辽金无网格法}{21}{24} \\
+    \ganttbar{引入自适应节点分布算法和并行计算优化程序}{23}{28} \\
+    \ganttbar{成果整理、论文发表、软件著作权申请、年度报告及项目结题报告}{5}{32}
 \end{ganttchart}
 \end{table}
 

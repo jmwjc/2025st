@@ -229,7 +229,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 % Size of the math equations
-%\DeclareMathSizes{10}{10}{7}{5}
+% \DeclareMathSizes{10}{10}{7}{5}
 %\DeclareMathSizes{11}{11}{7.7}{5.5}
 %\DeclareMathSizes{12.5}{11}{8.4}{6}
 %\DeclareMathSizes{13}{13}{9.1}{6.5}
@@ -243,7 +243,6 @@
 \setlength{\belowdisplayshortskip}{6pt}
 }
 
-
 \usepackage{graphicx}
 \usepackage[subrefformat=parens,labelformat=parens]{subfig} %
 \usepackage{booktabs}
@@ -253,7 +252,7 @@
 \crefformat{table}{表~#2#1#3}
 \crefformat{figure}{图~#2#1#3}
 \crefformat{equation}{式~（#2#1#3）}
-\usepackage[figurewithin=none]{caption}
+\usepackage[figurewithin=none,tablewithin=none]{caption}
 %图题、表头；若想取消加粗，去掉\bfseries
 \DeclareCaptionFont{capfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Caption font
 \DeclareCaptionFont{subfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Sub-caption font
@@ -348,7 +347,7 @@
 \setlength{\parskip}{0.1\baselineskip}
 %自动段落的行间距微调
 \usepackage{setspace}
-\setstretch{1.6} % 22 bp / 14 pt = 1.571
+% \setstretch{1.6} % 22 bp / 14 pt = 1.571
 %------------------------
 %微调部分文字中字体的胖瘦
 %------------------------
