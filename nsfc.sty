@@ -259,7 +259,7 @@
 %图题、表头；若想取消加粗，去掉\bfseries
 \DeclareCaptionFont{capfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Caption font
 \DeclareCaptionFont{subfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Sub-caption font
-\captionsetup{font = capfont}
+\captionsetup{font = capfont,skip=0pt}
 \captionsetup[subfigure]{font = subfont}
 \captionsetup[figure]{labelsep=period}
 \captionsetup[table]{labelsep=space}
@@ -319,9 +319,10 @@
 \newcommand{\highlight}[1]{
 	\textcolor{HighLight}{{\bfseries#1}}}
 
-\usepackage[square,numbers,sort&compress]{natbib}
+% \usepackage[square,numbers,sort&compress]{natbib}
+\usepackage[sort&compress]{gbt7714}
 %上标引用
-\newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
+% \newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
 
 \setlength{\bibsep}{5pt plus 0.3ex}%bib条目间距
 \renewcommand\bibsection{\section*{%

@@ -62,9 +62,9 @@ FUNCTION {load.config}
 {
   #2 'citation.et.al.min :=
   #1 'citation.et.al.use.first :=
-  #4 'bibliography.et.al.min :=
+  #10 'bibliography.et.al.min :=
   #3 'bibliography.et.al.use.first :=
-  #1 'uppercase.name :=
+  #0 'uppercase.name :=
   #0 'terms.in.macro :=
   #0 'year.after.author :=
   #1 'period.after.author :=
@@ -73,20 +73,20 @@ FUNCTION {load.config}
   #0 'link.title :=
   #1 'title.in.journal :=
   #1 'show.patent.country :=
-  #1 'show.mark :=
+  #0 'show.mark :=
   #0 'space.before.mark :=
   #1 'show.medium.type :=
   "slash" 'component.part.label :=
   #0 'short.journal :=
-  #0 'italic.journal :=
+  #1 'italic.journal :=
   #0 'link.journal :=
   #0 'bold.journal.volume :=
   #0 'show.missing.address.publisher :=
   #1 'space.before.pages :=
   #0 'only.start.page :=
   #0 'wave.dash.in.pages :=
-  #1 'show.urldate :=
-  #1 'show.url :=
+  #0 'show.urldate :=
+  #0 'show.url :=
   #0 'show.doi :=
   #1 'show.preprint :=
   #0 'show.note :=
