@@ -1,75 +1,75 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
   <diagram name="第 1 页" id="Z5SmqutZH8IfNpj86Ztt">
-    <mxGraphModel dx="325" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="2074" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-40" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;dashed=1;fillColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-40" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;dashed=1;fillColor=none;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1340" y="290" width="170" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NiMjakg9qDZDY1O-CkYL-39" target="NiMjakg9qDZDY1O-CkYL-40">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NiMjakg9qDZDY1O-CkYL-39" target="NiMjakg9qDZDY1O-CkYL-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-39" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;fillColor=none;strokeColor=#6c8ebf;dashed=1;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-39" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;fillColor=none;strokeColor=#6c8ebf;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="920" y="290" width="264" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-1" value="$$\begin{split}\delta \Phi&amp;amp;=\int_{t_0}^{t_1} \delta q \frac{\partial L}{\partial q} + \delta \dot q \frac{\partial L}{\partial \dot q} dt\\ &amp;amp;=\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt&amp;nbsp;+ {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}\\&amp;amp;=0\end{split}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-1" value="$$\begin{split}\delta \Phi&amp;amp;=\int_{t_0}^{t_1} \delta q \frac{\partial L}{\partial q} + \delta \dot q \frac{\partial L}{\partial \dot q} dt\\ &amp;amp;=\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt&amp;nbsp;+ {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}\\&amp;amp;=0\end{split}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="929.5" y="320" width="250" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-3" value="哈密顿原理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-3" value="哈密顿原理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="919.5" y="290" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-4" value="欧拉-拉格朗日方程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-4" value="欧拉-拉格朗日方程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1340" y="290" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-7" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_0)=\delta q(t_1)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-7" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_0)=\delta q(t_1)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1194" y="330" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-8" value="边界条件" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-8" value="边界条件" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1229" y="306" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-10" value="$$\color{blue}\left \{\begin{split}&amp;amp;\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}=0\\&amp;amp; q(t_0) = q_0,\;\dot q(t_0) = \dot q_0\end{split}\right .$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-10" value="$$\color{blue}\left \{\begin{split}&amp;amp;\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}=0\\&amp;amp; q(t_0) = q_0,\;\dot q(t_0) = \dot q_0\end{split}\right .$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1350" y="336" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-32" value="直接施加虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-32" value="直接施加虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="920" y="430" width="214" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-33" value="间断伽辽金法规避虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-33" value="间断伽辽金法规避虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1822" y="810" width="271" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-35" value="$$\delta \bar \Phi=\delta \Phi - {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}} =\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt + {\color{red}\underbrace{\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}-\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}_0} =0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-35" value="$$\delta \bar \Phi=\delta \Phi - {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}} =\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt + {\color{red}\underbrace{\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}-\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}_0} =0$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1863" y="840" width="450" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-38" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}q(t_0) = q_0,\;\dot q(t_0) = \dot q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-38" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}q(t_0) = q_0,\;\dot q(t_0) = \dot q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1200" y="350" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="NiMjakg9qDZDY1O-CkYL-34" target="NiMjakg9qDZDY1O-CkYL-13">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" parent="1" source="NiMjakg9qDZDY1O-CkYL-34" target="NiMjakg9qDZDY1O-CkYL-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-58" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;$$\dim \delta q(t_{0})=\dim \delta q(t_1)$$&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NiMjakg9qDZDY1O-CkYL-46">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-58" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;$$\dim \delta q(t_{0})=\dim \delta q(t_1)$$&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NiMjakg9qDZDY1O-CkYL-46" vertex="1" connectable="0">
           <mxGeometry x="0.0012" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-47" value="直接施加虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-47" value="直接施加虚位移本质边界条件方案" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1360" y="430" width="214" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-59" value="$$\begin{split}\delta \Phi&amp;amp;=\int_{t_0}^{t_1} \delta q \frac{\partial L}{\partial q} + \delta \dot q \frac{\partial L}{\partial \dot q} dt\\ &amp;amp;=\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt&amp;nbsp;+ {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}\\&amp;amp;=0\end{split}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-59" value="$$\begin{split}\delta \Phi&amp;amp;=\int_{t_0}^{t_1} \delta q \frac{\partial L}{\partial q} + \delta \dot q \frac{\partial L}{\partial \dot q} dt\\ &amp;amp;=\int_{t_0}^{t_1} \delta q({\color{blue}\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}}) dt&amp;nbsp;+ {\color{red}\delta q \left . \frac{\partial L}{\partial \dot&amp;nbsp;q}\right \vert_{t_0}^{t_1}}\\&amp;amp;=0\end{split}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="919.5" y="600" width="250" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-60" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_1)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-60" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_1)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="1189.5" y="616" width="49" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-61" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}\dot q(t_0) = \dot q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-61" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}\dot q(t_0) = \dot q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="1189.5" y="656" width="54.25" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-62" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;fillColor=none;strokeColor=#6c8ebf;dashed=1;arcSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-62" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;fillColor=none;strokeColor=#6c8ebf;dashed=1;arcSize=8;" parent="1" vertex="1">
           <mxGeometry x="915.5" y="570" width="264" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-63" value="哈密顿原理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-63" value="哈密顿原理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="915" y="570" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-67" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=8.518518518518519;endSize=4.35;fillColor=#b1ddf0;strokeColor=none;width=6.666666666666666;" edge="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-67" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=8.518518518518519;endSize=4.35;fillColor=#b1ddf0;strokeColor=none;width=6.666666666666666;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1186.75" y="639.44" as="sourcePoint" />
             <mxPoint x="1242.75" y="639.44" as="targetPoint" />
@@ -78,77 +78,110 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-69" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;dashed=1;fillColor=none;strokeColor=#6c8ebf;arcSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-69" value="" style="rounded=1;html=1;labelBackgroundColor=none;textOpacity=0;dashed=1;fillColor=none;strokeColor=#6c8ebf;arcSize=8;" parent="1" vertex="1">
           <mxGeometry x="1248.5" y="570" width="131.5" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-70" value="欧拉-拉格朗日方程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-70" value="欧拉-拉格朗日方程" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1248.5" y="570" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-71" value="$$\color{blue}\left \{\begin{split}&amp;amp;\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}=0\\&amp;amp; q(t_0) = q_0\\&amp;amp;\dot q(t_0) = \dot q_0\end{split}\right .$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-71" value="$$\color{blue}\left \{\begin{split}&amp;amp;\frac{\partial L}{\partial q} - \frac{\partial}{\partial t}\frac{\partial L}{\partial \dot q}=0\\&amp;amp; q(t_0) = q_0\\&amp;amp;\dot q(t_0) = \dot q_0\end{split}\right .$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1250" y="616" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-72" value="边界条件" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-72" value="边界条件" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontStyle=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1184" y="576" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-73" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}q(t_0) = q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-73" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$$ {\color{blue}q(t_0) = q_0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="1189.5" y="642" width="54.25" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-74" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_0)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-74" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;$${\color{red}\delta q(t_0)=0}$$&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="1179.5" y="600" width="69" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-11" value="$$\underbrace{\begin{bmatrix}\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\vdots&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\end{bmatrix}}_{\boldsymbol K}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-11" value="$$\underbrace{\begin{bmatrix}\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\vdots&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\end{bmatrix}}_{\boldsymbol K}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1832" y="565.5" width="130" height="127" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-20" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-20" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1791" y="633" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-18" value="$$\delta q(t_1)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-20">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-18" value="$$\delta q(t_1)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NiMjakg9qDZDY1O-CkYL-20" vertex="1">
           <mxGeometry width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-19" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-20">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-19" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" parent="NiMjakg9qDZDY1O-CkYL-20" vertex="1">
           <mxGeometry x="46" y="1.5" width="7" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-21" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-21" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1790" y="570" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-16" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-21">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-16" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" parent="NiMjakg9qDZDY1O-CkYL-21" vertex="1">
           <mxGeometry x="46" y="1.5" width="7" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-17" value="$$\delta q(t_0)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-21">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-17" value="$$\delta q(t_0)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NiMjakg9qDZDY1O-CkYL-21" vertex="1">
           <mxGeometry width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-34" value="$$q(t_0)=q_0$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=0;opacity=50;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-34" value="$$q(t_0)=q_0$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=0;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="1851" y="573.5" width="92" height="23" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-43" value="\(q(t_1)=\) ?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-43" value="\(q(t_1)=\) ?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1854" y="633" width="84" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-26" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-26" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1998" y="633" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-27" value="$$\delta q(t_1)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-26">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-27" value="$$\delta q(t_1)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NiMjakg9qDZDY1O-CkYL-26" vertex="1">
           <mxGeometry width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-28" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-26">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-28" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" parent="NiMjakg9qDZDY1O-CkYL-26" vertex="1">
           <mxGeometry x="46" y="1.5" width="7" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-29" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-29" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1997" y="570" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-30" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-29">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-30" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=south;" parent="NiMjakg9qDZDY1O-CkYL-29" vertex="1">
           <mxGeometry x="46" y="1.5" width="7" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-31" value="$$\delta q(t_0)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="NiMjakg9qDZDY1O-CkYL-29">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-31" value="$$\delta q(t_0)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="NiMjakg9qDZDY1O-CkYL-29" vertex="1">
           <mxGeometry width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-13" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;$$q(t_0)=q_0$$&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=0;opacity=50;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-13" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;$$q(t_0)=q_0$$&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=0;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="2057" y="636.5" width="92" height="23" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-9" value="$$\dot q(t_0)=\dot q_0$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=0;opacity=50;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-9" value="$$\dot q(t_0)=\dot q_0$$" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=0;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="2058" y="573.5" width="92" height="23" as="geometry" />
         </mxCell>
-        <mxCell id="NiMjakg9qDZDY1O-CkYL-75" value="$$\underbrace{\begin{bmatrix}\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\vdots&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\end{bmatrix}}_{\boldsymbol K}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="NiMjakg9qDZDY1O-CkYL-75" value="$$\underbrace{\begin{bmatrix}\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\vdots&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\end{bmatrix}}_{\boldsymbol K}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2039" y="565.5" width="130" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#000000;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="910" y="1020" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;fillStyle=hatch;strokeColor=none;arcSize=20;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="1000" width="20" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;strokeWidth=4;" edge="1" parent="1" source="pV-4ia8MaLoSHSoNCAMv-2" target="pV-4ia8MaLoSHSoNCAMv-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1420" y="660" as="sourcePoint" />
+            <mxPoint x="1470" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#FF0000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="1040" as="sourcePoint" />
+            <mxPoint x="900" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-5" value="$$P(t)$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1002" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-6" value="$$P(t) = \begin{cases}-\sin \pi t, &amp;amp; 0 \le t \le 1 \\ 0, &amp;amp; 1&amp;lt;t \end{cases}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="1594" y="586" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-7" value="$$u(x,t) = \begin{cases} \frac{2}{\pi}, &amp;amp; x &amp;lt;&amp;nbsp; t-1 \\ \frac{1}{\pi} (1-\cos \pi (t- \frac{x}{1})), &amp;amp; t-1 \le x \le t \\ 0, &amp;amp;&amp;nbsp; t &amp;lt; x \end{cases}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1025" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-8" value="精确解：" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1360" y="950" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pV-4ia8MaLoSHSoNCAMv-9" value="杆件模型：" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=楷体_GB2312;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="755" y="950" width="174.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
