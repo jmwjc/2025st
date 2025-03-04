@@ -1,6 +1,6 @@
 
 a = 4.0;
-lc = 0.6;
+lc = 1;
 
 Point(1) = {0.0, 0.0, 0.0, lc};
 Point(2) = {  a, 0.0, 0.0, lc};
@@ -28,7 +28,7 @@ Field[1].CurvesList = {5};
 Field[1].Sampling = 100;
 Field[2] = Threshold;
 Field[2].InField = 1;
-Field[2].SizeMin = lc/4;
+Field[2].SizeMin = lc/3;
 Field[2].SizeMax = lc;
 Field[2].DistMin = 0.5;
 Field[2].DistMax = 1.0;
