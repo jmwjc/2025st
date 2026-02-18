@@ -1,61 +1,30 @@
 
-\section{A}
-\begin{figure}[h!]
-	\centering %图片居中
-	\includegraphics[width=2cm]{figures/xiugai.png}
-	\captionsetup{justification=centering} %图题居中
-	\caption{这是图题}
-\end{figure}
+\section{研究目标}
 
-\begin{table}[htbp]
-	\MSzh\MSen\selectfont%设置表格字体
-	\centering  % 显示位置为中间
-	\caption{表格}  % 表格标题
-	\label{table2}  % 用于索引表格的标签
-	%字母的个数对应列数，|代表分割线
-	% l代表左对齐，c代表居中，r代表右对齐
-	\begin{tabular}{|c|c|c|c|}  
-		\hline  % 表格的横线
-		& & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
-		第一列&第二列&第三列&第四列 \\  % 表格中的内容，用&分开，\\表示下一行
-		\hline
-		& & & \\[-6pt]  %可以避免文字偏上 
-		0.1&0.2&0.3&0.4 \\
-		\hline
-	\end{tabular}
-\end{table}
+本项目围绕时空混合离散分析方法目前不适用于非结构型网格和稳定性机理不清晰的两大科学问题，研究适用于非结构性网格的完全弱形式稳定时空混合离散有限元-无网格分析方法，具体的研究目标如下：
 
-\begin{equation}
-	E=mC^2
-\end{equation}
+(1) 提出时间末端虚位移边界条件的施加方法
 
-\section{B}
-\begin{figure}[h!]
-	\centering %图片居中
-	\includegraphics[width=2cm]{figures/xiugai.png}
-	\captionsetup{justification=centering} %图题居中
-	\caption{这是图题}
-\end{figure}
 
-\begin{table}[htbp]
-	\MSzh\MSen\selectfont%设置表格字体
-	\centering  % 显示位置为中间
-	\caption{表格}  % 表格标题
-	\label{table3}  % 用于索引表格的标签
-	%字母的个数对应列数，|代表分割线
-	% l代表左对齐，c代表居中，r代表右对齐
-	\begin{tabular}{|c|c|c|c|}  
-		\hline  % 表格的横线
-		& & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
-		第一列&第二列&第三列&第四列 \\  % 表格中的内容，用&分开，\\表示下一行
-		\hline
-		& & & \\[-6pt]  %可以避免文字偏上 
-		0.1&0.2&0.3&0.4 \\
-		\hline
-	\end{tabular}
-\end{table}
+(2) 提出基于最优自由度配比的稳定无网格时空混合离散方案
 
-\begin{equation}
-	E=mC^2
-\end{equation}
 
+
+(3) 提出满足变分一致性的完全弱形式时空混合离散伽辽金弱形式
+
+(4) 发展 
+
+\section{研究方案}
+
+在弹簧-质量系统为例，分析哈密顿原理能量泛函中时域末端虚位移本质边界条件下位移变量的求解空间。
+将传统能量泛函中的虚位移作为拉格朗日乘子，设计全新拉格朗日乘子型能量泛函。
+分析新建立的能量泛函中，经过拉格朗日乘子法投影后的位移变量空间与原空间的等价性。
+同时在全新的能量泛函中引入应力边界条件与初始时刻动量边界条件，验证相对应拉格朗日乘子型伽辽金弱形式的变分一致性，证明其与欧拉–拉格朗日方程的等价性。
+
+(2) 基于最优自由度配比的稳定无网格时空混合离散方案
+
+在哈密顿原理中引入勒让德变换，建立位移-动量混合离散伽辽金弱形式。
+分析该弱形式下LBB稳定性条件，建立基于自由度配比的LBB稳定系数估计表达式及最优自由度配比条件。
+引入有限元近似、无网格再生核近似分别离散位移、动量，建立最优自由度配比的，从而发展稳定时空伽辽金有限元-无网格混合离散分析方法。
+\section{特色与创新点}
+\section{年度研究计划}
