@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.1 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.1">
+  <diagram name="第 1 页" id="gXU1RHx-jFJNDDnn8E8i">
+    <mxGraphModel dx="1072" dy="693" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="1181" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sfusv8wsPF4fgh5l3a7i-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;strokeColor=none;fontSize=16;" value="时空混合离散分析方法&lt;b&gt;非结构网格的适用性问题&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="360" x="120" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;" value="时空混合离散弱形式稳定性机理" vertex="1">
+          <mxGeometry height="60" width="270" x="330" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;" value="时间末端虚位移本质边界条件施加" vertex="1">
+          <mxGeometry height="60" width="270" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=楷体-简;fontStyle=0;fontSize=16;" value="高维弹性波问题工程应用" vertex="1">
+          <mxGeometry height="60" width="150" x="427.5" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#990000;fontStyle=1;" value="关键科学问题(1)" vertex="1">
+          <mxGeometry height="30" width="120" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#990000;fontStyle=1;" value="关键科学问题(2)" vertex="1">
+          <mxGeometry height="30" width="120" x="330" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=#FFFFFF;gradientColor=#FFF2CC;shadow=1;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;研究目标(1): 适用于非结构网格的虚位移边界条件施加方案&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="225" x="30" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=#FFFFFF;gradientColor=#FFF2CC;shadow=1;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;研究目标(2):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;基于最优自由度配比的再生核增稳时空混合离散方案&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="247.5" x="330" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=#FFFFFF;gradientColor=#FFF2CC;shadow=1;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;研究目标(3):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;基于赫林格-赖斯纳原理的变分一致时空混合离散伽辽金弱形式&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="307.5" x="142.5" y="561" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#000099;fontStyle=1;" value="研究内容(1)" vertex="1">
+          <mxGeometry height="30" width="120" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#000099;fontStyle=1;" value="研究内容(2)" vertex="1">
+          <mxGeometry height="30" width="120" x="330" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#000099;fontStyle=1;" value="研究内容(3)" vertex="1">
+          <mxGeometry height="30" width="120" x="82.5" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=楷体-简;fontSize=16;fontColor=#000099;fontStyle=1;" value="研究内容(4)" vertex="1">
+          <mxGeometry height="30" width="120" x="45" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="XeW_1eNMgGLALzYTnciu-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=#FFFFFF;gradientColor=#FFF2CC;shadow=1;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;研究目标(4):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;高维弹性波问题&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;的再生核增稳时空混合离散分析方法&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="307.5" x="150" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
