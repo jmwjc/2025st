@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.1 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.1">
   <diagram name="第 1 页" id="gXU1RHx-jFJNDDnn8E8i">
-    <mxGraphModel dx="418" dy="669" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="1181" math="1" shadow="0">
+    <mxGraphModel dx="-34" dy="372" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="1181" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -230,17 +230,14 @@
             <mxPoint x="1" y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-73" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" target="ib8eSL5TeFff2KGI_z68-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000099;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=none;fontColor=#ffffff;strokeWidth=2;arcSize=6;" value="" vertex="1">
           <mxGeometry height="197" width="630" x="1785" y="653" as="geometry" />
         </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000099;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=none;fontColor=#ffffff;strokeWidth=2;arcSize=6;" value="" vertex="1">
-          <mxGeometry height="121" width="630" x="1785" y="869" as="geometry" />
+          <mxGeometry height="106" width="630" x="1785" y="869" as="geometry" />
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-68" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;curved=1;labelBackgroundColor=none;" target="ib8eSL5TeFff2KGI_z68-54" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;再生核增稳&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;最优自由度配比&lt;/span&gt;">
-          <mxGeometry relative="1" x="-0.0252" y="30" as="geometry">
+        <mxCell id="ib8eSL5TeFff2KGI_z68-68" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;curved=1;" target="ib8eSL5TeFff2KGI_z68-54" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;再生核增稳&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;最优自由度配比&lt;/span&gt;">
+          <mxGeometry relative="1" x="0.0018" y="15" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="2266" y="675" />
@@ -251,8 +248,8 @@
         <mxCell id="ib8eSL5TeFff2KGI_z68-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000099;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=none;fontColor=#ffffff;strokeWidth=2;arcSize=6;" value="" vertex="1">
           <mxGeometry height="263" width="300" x="2115.5" y="367" as="geometry" />
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-67" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=1;strokeWidth=2;labelBackgroundColor=none;" target="ib8eSL5TeFff2KGI_z68-54" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;施加时间末端&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;虚位移边界条件&lt;/span&gt;">
-          <mxGeometry relative="1" x="-0.0364" y="-30" as="geometry">
+        <mxCell id="ib8eSL5TeFff2KGI_z68-67" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=1;strokeWidth=2;" target="ib8eSL5TeFff2KGI_z68-54" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;施加时间末端&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: 楷体-简; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;虚位移边界条件&lt;/span&gt;">
+          <mxGeometry relative="1" x="-0.0093" y="-15" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="1936" y="675" />
@@ -282,7 +279,7 @@
           <mxGeometry height="30" width="90" x="1890.5" y="352" as="geometry" />
         </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;align=center;verticalAlign=middle;fontFamily=楷体-简;fontSize=12;fontStyle=1;fillColor=#FFFFFF;gradientColor=#CCE5FF;shadow=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 153);&quot;&gt;研究目标(4):&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; font-size: 16px;&quot;&gt;高维弹性波问题&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; font-size: 16px;&quot;&gt;的再生核增稳时空混合离散分析方法&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="45" width="480" x="1860" y="937" as="geometry" />
+          <mxGeometry height="45" width="480" x="1860" y="922" as="geometry" />
         </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fontFamily=楷体-简;fontSize=16;strokeColor=none;fillColor=#FFFFFF;gradientColor=#FFCCCC;shadow=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(153, 0, 0); background-color: transparent;&quot;&gt;关键科学问题(1):&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 20px; border: none; padding: 0px;&quot;&gt;时间末端虚位移本质边界条件施加&lt;/blockquote&gt;" vertex="1">
           <mxGeometry height="60" width="285" x="1801" y="277.5" as="geometry" />
@@ -407,14 +404,14 @@
         <mxCell id="ib8eSL5TeFff2KGI_z68-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=楷体-简;fontStyle=0;fontSize=16;strokeColor=none;fillColor=none;align=left;spacing=2;verticalAlign=top;" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;采用非结构网格将遇到严重数值色散引起的振动问题。&lt;/div&gt;" vertex="1">
           <mxGeometry height="90.62" width="149.8" x="2251.2" y="164.38" as="geometry" />
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;fillColor=none;" value="自适应节点加密" vertex="1">
-          <mxGeometry height="30" width="120" x="2131.2" y="915" as="geometry" />
+        <mxCell id="ib8eSL5TeFff2KGI_z68-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;" value="自适应节点加密" vertex="1">
+          <mxGeometry height="30" width="120" x="1874.5" y="892" as="geometry" />
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;fillColor=none;" value="时空整体并行计算" vertex="1">
-          <mxGeometry height="30" width="135" x="1936" y="914.5" as="geometry" />
+        <mxCell id="ib8eSL5TeFff2KGI_z68-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;" value="时空整体并行计算" vertex="1">
+          <mxGeometry height="30" width="135" x="2031.5" y="892" as="geometry" />
         </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;fillColor=none;" value="程序内存优化" vertex="1">
-          <mxGeometry height="30" width="105.5" x="2130.5" y="885" as="geometry" />
+        <mxCell id="ib8eSL5TeFff2KGI_z68-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;" value="程序内存优化" vertex="1">
+          <mxGeometry height="30" width="135" x="2205" y="892" as="geometry" />
         </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-61" edge="1" parent="1" style="endArrow=classicThin;html=1;rounded=0;fontFamily=楷体-简;fontSize=12;fontColor=default;fontStyle=1;endFill=1;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -463,9 +460,6 @@
         </mxCell>
         <mxCell id="ib8eSL5TeFff2KGI_z68-72" edge="1" parent="1" source="ib8eSL5TeFff2KGI_z68-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.781;entryDx=0;entryDy=0;entryPerimeter=0;" target="ib8eSL5TeFff2KGI_z68-57">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ib8eSL5TeFff2KGI_z68-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=楷体-简;fontSize=16;strokeColor=none;fillColor=none;" value="高维弹性波问题推广" vertex="1">
-          <mxGeometry height="30" width="149.5" x="1921" y="885" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
