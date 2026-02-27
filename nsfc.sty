@@ -1,75 +1,18 @@
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{nsfc}[2026/01/22 NSFC 面青地]
+% -------------------------------------------------
+% NSFC 官方只有 Word 模版，民间有南开大学程明明教授的 LaTeX [模版](http://www.latexstudio.net/archives/9308)和南京航空航天大学戴一冕博士的 [iNSFC](https://github.com/YimianDai/iNSFC)模版。
+% 本模版即修改自 2019 年的 iNSFC 模版，原来 iNSFC 已经许久不更新，貌似也没有继续更新计划了【2024年又进行了更新】。
+% 经历 3 年的使用和打磨，特别为 macOS 系统做适配，同时应同行鼓励，对windows系统做适配，这里公布出来给潜在用户做参考。
+% -------------------------------------------------
 \makeatletter
-
-%选项选择：kai输出正文MS楷体；song输出正文MS宋体
-\newif\ifMS@kai
-\newif\ifMS@song
-\MS@kaitrue%默认正文楷体
-
-
-
-%选项选择：on输出正文MS文字；off不输出正文MS文字
-\newif\ifMS@on
-\newif\ifMS@off
-\MS@kaitrue%默认正文楷体
-
-
-%------------------------
-%xcolor命令
-%------------------------
-%颜色
-\usepackage{xcolor}
-\definecolor{NSFblue}{RGB}{0, 112, 192}
-\definecolor{NSFred}{RGB}{255, 0, 0}
-%\definecolor{NSFblue}{RGB}{0,0,0}
-\definecolor{HighLight}{RGB}{0,31,141}
-
-%========导入用户的自定义设置========
-\IfFileExists{sections/个性化设置.sty}{
-	\usepackage{sections/个性化设置}
-}{
-%【1】标题颜色
-\definecolor{HighLight}{RGB}{0,0,0}
-%【2】正文字体设置
-\global\MS@kaitrue\global\MS@songfalse%楷体正文
-%\global\MS@kaifalse\global\MS@songtrue%宋体正文
-%【3】是否屏蔽正文
-\global\MS@offtrue\global\MS@onfalse%屏蔽正文
-%\global\MS@ontrue\global\MS@offfalse%不屏蔽正文
-%【4】设置数学字体
-\global\def\selectedmathfont{latinmodern-math}
-}
-
-
-\ifMS@kai%处理用户字体
-	\def\MSzh{\zhkai}
-	\def\MSen{\ensong}
-\else
-\ifMS@song
-	\def\MSzh{\zhsong}
-	\def\MSen{\ensong}
-\else
-	\def\MSzh{\zhkai} % fallback
-	\def\MSen{\ensong}
-\fi
-\fi
-
-\ifMS@off%处理用户输出
-\AtBeginDocument{%
-	\renewcommand{\input}[1]{\vspace{0.9\baselineskip}}%
-}
-\fi
-
 %------------------------
 %xeCJK包的命令；要放到最前
 %------------------------
-\usepackage{xeCJK}
 \defaultfontfeatures{Mapping=tex-text}%连字符
 %特殊符号的宽度
-\xeCJKsetwidth{、，。；（）}{1.18em}%符号宽度，可添加‘’“”
-\xeCJKsetup{CJKecglue = \hspace{0.3em}}%中英文间空格的宽度
-%\xeCJKsetup{CJKglue =  \hspace{0.3em}}%微调中文内部间距【但是ctex完全禁用了
+\xeCJKsetwidth{、，。；}{1.08em}%符号宽度，可添加‘’“”
+\xeCJKsetwidth{（）}{1em}%符号宽度，可添加‘’“”
+\xeCJKsetup{%中英文间空格的宽度
+	CJKecglue = \hspace{0.3em},}
 
 %------------------------
 %字体设置
@@ -97,19 +40,12 @@
 	AutoFakeSlant=0.3,
 	AutoFakeBold=3,
 	]{simsun.ttc}
-%\newfontfamily{\WINsong}[%英文
-%Path = ./fonts/,
-%UprightFont    = TimesNewRoman.ttf,
-%BoldFont       = TimesNewRomanBold.ttf,
-%ItalicFont     = TimesNewRomanItalic.ttf,
-%BoldItalicFont = TimesNewRomanBoldItalic.ttf
-%]{Times New Roman}
 \newfontfamily{\WINsong}[%英文
-Path=./fonts/,
-AutoFakeSlant=0.3,
-AutoFakeBold=3,
-]{TimesNewRoman.ttf}
-\newfontfamily\wingdingsfont[Path=./fonts/]{Wingdings.ttf}
+	Path=./fonts/,
+	AutoFakeSlant=0.3,
+	AutoFakeBold=3,
+	]{TimesNewRoman.ttf}
+\newfontfamily\wingdingsfont{Wingdings.ttf}[Path=./fonts/]
 
 %设置模版字体
 \newcommand{\zhkai}{\CJKfamily{WINkai}}
@@ -177,72 +113,49 @@ AutoFakeBold=3,
 %小五9pt，六号 7.5pt ，小六6.5pt，七号 5.5pt ，八号5pt
 
 %------------------------
+%xcolor命令
+%------------------------
+%颜色
+\usepackage{xcolor}
+\definecolor{YSFblue}{RGB}{0, 112, 192}
+%\definecolor{YSFblue}{RGB}{0,0,0}
+\definecolor{HighLight}{RGB}{0,31,141}
+
+%------------------------
 %模版部分
 %------------------------
 % For the chapter name like （一）立项依据与研究内容（4000-8000字）
 \let\origchapter\chapter
 \renewcommand\chapter{\@ifstar{\starchapter}{\nostarchapter}}
-\newcommand\nostarchapter[2][0pt]{%
+\newcommand\nostarchapter[1]{%
 \refstepcounter{chapter}\begingroup
-    %\vspace{5pt}
-    \color{NSFblue}\zhkai\enkai\fontsize{14.2pt}{22pt}\selectfont%
+    \vspace{6pt}
+    \color{YSFblue}\zhkai\enkai\fontsize{14pt}{22pt}\selectfont%
     \setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
-    \par\noindent\textbf{\hspace{28pt}\hspace*{#1}（\chinese{chapter}）}#2\par
+    \ifnum\value{chapter}=1 %是word没对齐，但是我们还是向word对齐
+        \par\noindent\textbf{\kg{1.6em}（\chinese{chapter}）}#1\par
+    \else
+        \par\noindent\textbf{\kg{2.1em}（\chinese{chapter}）}#1\par
+     \fi
     \vspace{0pt}
     \endgroup}
-\newcommand\starchapter[1]{\vspace{-1em}\origchapter*{#1}\vspace{-0em}}
 
-%根据是否在MS环境中切换section颜色，防止专家以为还是采用的旧模版
-\newif\ifinMS
-\inMSfalse
+\newcommand\starchapter[1]{\vspace{-1em}\origchapter*{#1}\vspace{-0em}}
 
 % For the section name like 2．项目的研究内容、研究目标，以及拟解决的关键科学问题（此部分为重点阐述内容）；
 \let\origsection\section
-\renewcommand\section{%
-	\@ifstar{\origsection*}%
-	{\@ifnextchar[{\sectionwithopt}{\sectiondefault}}%
-}
-\def\sectionwithopt[#1]#2{%
-	\sectiondo{#1}{#2}%
-}
-\def\sectiondefault#1{%
-	\sectiondo{h}{#1}%默认 h = half（半角点）
-}
-\def\sectiondo#1#2{%
-	\refstepcounter{section}%
-	\begingroup
-	\ifinMS%判断是否在MS中
-	\color{HighLight}\MSzh\MSen\fontsize{14.2pt}{22pt}\selectfont%
-	\else
-	\color{NSFblue}\zhkai\enkai\fontsize{14.2pt}{22pt}\selectfont%
-	\fi
-	\setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
-	\par\indent
-	\arabic{section}%
-	\ifx#1f．\else.\fi#2\par
-	\endgroup
-}
-%\let\origsection\section%26年，只有面上这里是全角点，其他都是半角点，所以需要重新定义，引入一个可选参数。参见上述部分。
-%\renewcommand\section{\@ifstar{\starsection}{\nostarsection}}
-%\newcommand\nostarsection[1]{%
-%	\refstepcounter{section}\begingroup
-%	\ifinMS%判断是否在MS中
-%	\color{HighLight}
-%	\MSzh\MSen\fontsize{14.2pt}{22pt}\selectfont%
-%	\else
-%	\color{NSFblue}
-%	\zhkai\enkai\fontsize{14.2pt}{22pt}\selectfont%
-%	\fi%
-%	\setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
-%	\par\indent\arabic{section}.#1\par%24年全角点；25年半角点；
-%	% \vspace{11pt}
-%	\endgroup}
-%\newcommand\starsection[1]{%
-%	\begingroup
-%	\ifinMS\color{HighLight}\else\color{NSFblue}\fi%
-%	\origsection*{#1}%
-%	\endgroup
-%}
+\renewcommand\section{\@ifstar{\starsection}{\nostarsection}}
+\newcommand\nostarsection[1]{%
+    \refstepcounter{section}\begingroup
+%     \vspace{0pt}
+    \color{YSFblue}\zhkai\enkai\fontsize{14pt}{22pt}\selectfont%
+    \setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
+    \par\indent\arabic{section}.#1\par%24年全角点；25年半角点；
+% \vspace{11pt}
+    \endgroup}
+\newcommand\starsection[1]{\origsection*{#1}}
+
+
 %------------------------
 %正文部分的标题
 %------------------------
@@ -251,9 +164,9 @@ AutoFakeBold=3,
 \newcommand\nostarsubsection[1]{%
     \refstepcounter{subsection}\begingroup\color{HighLight}
     \vspace{6pt}
-    \MSzh\MSen\fontsize{13pt}{22pt}\selectfont%\bfseries%
+    \zhkai\enkai\fontsize{13pt}{22pt}\selectfont\bfseries%
     \setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
-    \par\indent\hspace{3pt}\arabic{section}.\arabic{subsection}#1\par
+    \par\noindent\arabic{section}.\arabic{subsection}#1\par
     \vspace{2pt}
     \endgroup}
 %\newcommand\nostarsubsection[1]{\vspace{-1em}\origsubsection*{#1}\vspace{-0em}}
@@ -261,7 +174,7 @@ AutoFakeBold=3,
     \begingroup\color{HighLight}
     \vspace{6pt}
     %\stepcounter{subsection}
-    \MSzh\MSen\fontsize{13pt}{22pt}\selectfont\bfseries%
+    \zhkai\enkai\fontsize{13pt}{22pt}\selectfont\bfseries%
     \setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
 %    \par\noindent\arabic{section}.\arabic{subsection}#1\par
     \par\noindent#1\par
@@ -272,16 +185,17 @@ AutoFakeBold=3,
 \renewcommand\subsubsection{\@ifstar{\starsubsubsection}{\nostarsubsubsection}}
 \newcommand\nostarsubsubsection[1]{%
     \refstepcounter{subsubsection}\begingroup\color{HighLight}
-   \MSzh\MSen\fontsize{13pt}{22pt}\selectfont%
+%     \vspace{0pt}
+    \zhkai\enkai\fontsize{13pt}{22pt}\selectfont%
     \setlength{\baselineskip}{22pt}%最后设置，防止被fontsize中的覆盖
-    \par\indent\hspace{0.1pt}（\arabic{subsubsection}）#1\par%1.1下(1)样式三级标题
+    \par\indent（\arabic{subsubsection}）#1\par%1.1下(1)样式三级标题
 %    \par\noindent\arabic{section}.\arabic{subsection}.\arabic{subsubsection}#1\par%1.1.1样式三级标题
 % \vspace{11pt}
     \endgroup}
 \newcommand\starsubsubsection[1]{%
     \refstepcounter{subsubsection}\begingroup\color{HighLight}
 	\vspace{2pt}
-    \MSzh\MSen\fontsize{12.5pt}{22pt}\selectfont%
+    \zhkai\enkai\fontsize{12.5pt}{22pt}\selectfont%
     \setlength{\baselineskip}{20pt}%最后设置，防止被fontsize中的覆盖
     \par\indent#1\par
     %\vspace{-1pt}
@@ -296,17 +210,10 @@ AutoFakeBold=3,
 %正文段落
 %------------------------
 \newenvironment{MS}%
-{\begingroup\MSzh\ensong\fontsize{12.5pt}{23pt}\selectfont%段落：中文楷体/宋体，英文宋体
-	\setlength{\baselineskip}{23pt}
-	\everydisplay=\expandafter{\the\everydisplay\setstretch{1}%重置正文行间距对数学公式行间距影响
-		%公式上下间距，不需要设置，想设置可以设置
-		\fontsize{12.5pt}{23pt}\selectfont%根据第一个参数选择DeclareMathSizes的后三个参数字体
-		\setlength{\abovedisplayskip}{10pt}
-		\setlength{\belowdisplayskip}{7pt}%
-		\setlength{\abovedisplayshortskip}{0pt}%对于上一行半行文本的情况
-		\setlength{\belowdisplayshortskip}{5pt}%%对于下一行半行文本的情况
-}\inMStrue}
-{\inMSfalse\endgroup}
+	{%\begingroup\zhsong\ensong\fontsize{12.5pt}{22pt}\selectfont%段落：中文宋体，英文宋体
+	\begingroup\zhkai\ensong\fontsize{12.5pt}{23pt}\selectfont%段落：中文楷体，英文宋体
+	\setlength{\baselineskip}{22.1pt}}
+	{\endgroup}
 
 %CTEX包自动引用xeCJK包，文档查看xeCJK
 %------------------------
@@ -331,44 +238,36 @@ AutoFakeBold=3,
 %------------------------
 \usepackage{amsmath}
 \usepackage{amssymb}
-%\usepackage{bm}
-%\usepackage{newtxmath}
-\usepackage{unicode-math}
-% 根据 \selectedmathfont 的值设置字体
-\def\cambrianame{cambria-math}
-\ifdefined\selectedmathfont
-	\ifx\selectedmathfont\cambrianame
-		\setmathfont[Path=./fonts/math/, Extension=.ttf]{cambria-math}%处理 cambria 特例，其余用 .otf
-	\else
-		\setmathfont[Path=./fonts/math/, Extension=.otf]{\selectedmathfont}
-	\fi
-\else
-	\setmathfont[Path=./fonts/math/, Extension=.otf]{latinmodern-math}
-\fi
-
 % Size of the math equations
-%\DeclareMathSizes{<正文大小>}{<display style 大小>}{<script style 大小>}{<scriptscript style 大小>}根据正文中设置的第一个参数，设定对应的后边几个参数字体大小
-\DeclareMathSizes{10}{10}{7}{5}
-\DeclareMathSizes{11}{11}{7.7}{5.5}
-\DeclareMathSizes{12.5}{12.5}{8.4}{6}
-\DeclareMathSizes{13}{13}{9.1}{6.5}
+% \DeclareMathSizes{10}{10}{7}{5}
+%\DeclareMathSizes{11}{11}{7.7}{5.5}
+%\DeclareMathSizes{12.5}{11}{8.4}{6}
+%\DeclareMathSizes{13}{13}{9.1}{6.5}
 \DeclareMathSizes{14}{14}{9.8}{7}
+%公式上下间距
+\everydisplay\expandafter{%
+	\the\everydisplay
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlength{\abovedisplayshortskip}{6pt}
+\setlength{\belowdisplayshortskip}{6pt}
+}
 
 \usepackage{graphicx}
 \usepackage[subrefformat=parens,labelformat=parens]{subfig} %
 \usepackage{booktabs}
 % \usepackage[citebordercolor = white]{hyperref}
 \usepackage[hidelinks]{hyperref}
-%\hypersetup{colorlinks,linkcolor=black}%引用超链接颜色，可用NSFblue
+%\hypersetup{colorlinks,linkcolor=black}%引用超链接颜色，可用YSFblue
 \usepackage{cleveref}%须在hyperref后边
 \crefformat{table}{表~#2#1#3}
 \crefformat{figure}{图~#2#1#3}
 \crefformat{equation}{式~（#2#1#3）}
-\usepackage[figurewithin=none]{caption}
+\usepackage[figurewithin=none,tablewithin=none]{caption}
 %图题、表头；若想取消加粗，去掉\bfseries
-\DeclareCaptionFont{capfont}{\MSzh\ensong\fontsize{11pt}{22pt}\selectfont\bfseries} % Caption font
-\DeclareCaptionFont{subfont}{\MSzh\ensong\fontsize{11pt}{22pt}\selectfont\bfseries} % Sub-caption font
-\captionsetup{font = capfont}
+\DeclareCaptionFont{capfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Caption font
+\DeclareCaptionFont{subfont}{\zhkai\enkai\fontsize{11pt}{22pt}\selectfont\bfseries} % Sub-caption font
+\captionsetup{font = capfont,skip=0pt}
 \captionsetup[subfigure]{font = subfont}
 \captionsetup[figure]{labelsep=period}
 \captionsetup[table]{labelsep=period}
@@ -377,48 +276,18 @@ AutoFakeBold=3,
 \setlength{\abovecaptionskip}{0pt}  % 修改 caption 与图表上方的距离
 \setlength{\belowcaptionskip}{-10pt} % 修改 caption 与正文的距离
 
-
-%全局：跨越多个Chapter的图/表/公式的计数
-\def\cl@chapter{%
-	\@elt{footnote}%
-	\@elt{section}%
-	\@elt{subsection}%
-	\@elt{subsubsection}%
-	\@elt{paragraph}%
-	\@elt{subparagraph}%% 注意：没有 figure, table, equation
-}
-\renewcommand {\thefigure}{\arabic{figure}}%图1
-\renewcommand {\thetable}{\arabic{table}}%表1
-\renewcommand{\theequation}{\arabic{equation}}%样式：(1)
-%{\thesection{}-\arabic{figure}}%样式：(1.1-1)
-%{\thechapter{}-\arabic{figure}}%样式：(1-1)，注意（一）立项依据里的所有节都是第一章
-
-%局部：按照Chapter清零重新开始的图/表/公式的计数
 %\numberwithin{figure}{section}%关联图号和章节，应该是每一个section重置一下图号计数器
+\renewcommand {\thefigure}{\arabic{figure}}%图1
 %\renewcommand {\thefigure}{\thesection{}-\arabic{figure}}%图1.1-1
 %如果想修改图中的数字字体，就在对应部分添加\ensong\selectfont\arabic{figure}，或者\enkai\selectfont\arabic{figure}。
-%表和公式类似
 
-%------------------------
-%定义定理等
-%------------------------
-\let\openbox\relax % 解决 newtxmath 与 amsthm 的 \openbox 冲突
-\usepackage{amsthm}
-% 定义新的 theorem 样式
-\newtheoremstyle{NSFthm}% 名称
-{3pt}% 上间距
-{3pt}% 下间距
-{\MSzh\selectfont}% 正文样式
-{}% 缩进
-{\bfseries\MSzh\selectfont}% 标题字体（加粗宋体）
-{.}% 标题后标点
-{0.5em}% 标题与正文间距
-{}% 自定义标题格式（可选）
-% 应用该样式
-\theoremstyle{NSFthm}
-\newtheorem{definition}{定义}%[chapter] % 或 [section]，根据文档类调整
-\newtheorem{theorem}{定理}
+\renewcommand {\thetable}{\arabic{table}}%表1
 
+%公式计数器
+\renewcommand{\theequation}
+{\arabic{equation}}%样式：(1)
+%{\thesection{}-\arabic{figure}}%样式：(1.1-1)
+%{\thechapter{}-\arabic{figure}}%样式：(1-1)，注意（一）立项依据里的所有节都是第一章
 %------------------------
 %列表
 %------------------------
@@ -452,35 +321,42 @@ AutoFakeBold=3,
 \renewcommand\thefootnote{\textcircled{\enkai\fontsize{7pt}{15pt}\selectfont\arabic{footnote}}}
 %脚注字体
 \let\oldfootnotesize\footnotesize
-\renewcommand*{\footnotesize}{\oldfootnotesize\MSzh\ensong\fontsize{11pt}{15pt}\selectfont}
+\renewcommand*{\footnotesize}{\oldfootnotesize\zhkai\enkai\fontsize{11pt}{15pt}\selectfont}
 %------------------------
 %高亮、参考文献
 %------------------------
 \newcommand{\highlight}[1]{
 	\textcolor{HighLight}{{\bfseries#1}}}
 
-\usepackage[square,numbers,sort&compress]{natbib}%数字引用[1]
-\bibliographystyle{bibs/gbt7714-numerical}
-%\usepackage[round,sort]{natbib}%作者年引用Author(2022)
-%\bibliographystyle{bibs/gbt7714-author-year}
-%bst定制方法：修改对应.bst文件的FUNCTION {load.config}部分设置
-
-\newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}%上标引用
+% \usepackage[square,numbers,sort&compress]{natbib}
+\usepackage[sort&compress]{gbt7714}
+%上标引用
+% \newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}
 
 \setlength{\bibsep}{5pt plus 0.3ex}%bib条目间距
 \renewcommand\bibsection{\section*{%
-	{\MSzh\ensong\fontsize{12pt}{22pt}\selectfont%
+	{\zhkai\enkai\fontsize{12pt}{22pt}\selectfont%
 	\setlength{\baselineskip}{20pt}}}}%参考文献}}}
 \newenvironment{REF}%
 	{\begingroup
-	\MSzh\ensong\fontsize{12pt}{22pt}\selectfont
+	\zhkai\ensong\fontsize{12pt}{22pt}\selectfont
 	\setlength{\baselineskip}{15pt}}
 	{\endgroup}
 \renewcommand{\bibfont}{%
-	\MSzh\ensong\fontsize{11.5pt}{18pt}\selectfont%
+	\zhkai\ensong\fontsize{11.5pt}{18pt}\selectfont%
 	\setlength{\baselineskip}{15pt}}
 
 \renewcommand{\ttfamily}{\ensong\selectfont}%参考文献中的链接字体用的是texttt
+
+% \setlength{\baselineskip}{22pt}
+%
+%% Prof. Mingming Chen's definition on subsection
+%\def\cvprsubsection{\@startsection {subsection}{2}{\z@}
+%   {11pt plus 2pt minus 2pt}{6pt} {\indent \bfseries \songti}}
+%\def\cvprssubsect#1{\cvprsubsection*{#1}}
+%\def\cvprsubsect#1{\cvprsubsection{\hskip -1em.~#1 \vspace{-0.2em}}}
+%\def\subsection{\@ifstar\cvprssubsect\cvprsubsect}
+
 
 %------------------------
 %一些排版的间距
@@ -489,18 +365,18 @@ AutoFakeBold=3,
 \setlength{\parskip}{0.1\baselineskip}
 %自动段落的行间距微调
 \usepackage{setspace}
-\setstretch{1.6} % 22 bp / 14 pt = 1.571
+% \setstretch{1.6} % 22 bp / 14 pt = 1.571
 %------------------------
 %微调部分文字中字体的胖瘦
 %------------------------
 \newcommand{\ps}[2][0.95]{\scalebox{#1}[1]{#2}}%#1默认取0.95等
 \newcommand{\kg}[1]{\kern#1}%-0.1em；空格
 
+% \excludecomment{MS}%用来对比模版有无变化
+%或者下边这种方法
+% \renewcommand{\input}[1]{\vspace{\baselineskip}}%用来对比模版有无变化
+
 %查看命令的定义
 %\meaning\cite等
 
 \makeatother
-%TODO 2027年升级计划
-%自定义路径：\newcommand{\MSsections}{sections/}，\input{\MSsections 一1依据}，包括sections,figures,ref.bib
-%正文和小标题字体进一步区分
-
