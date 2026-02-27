@@ -1,3 +1,18 @@
+@article{antonietti2020,
+  title = {A Space-Time Discontinuous {{Galerkin}} Method for the Elastic Wave Equation},
+  author = {Antonietti, Paola F. and Mazzieri, Ilario and Migliorini, Francesco},
+  year = 2020,
+  month = oct,
+  journal = {Journal of Computational Physics},
+  volume = {419},
+  pages = {109685},
+  issn = {0021-9991},
+  doi = {10.1016/j.jcp.2020.109685},
+  urldate = {2025-02-20},
+  abstract = {In this work we present a new high order space-time discretization method based on a discontinuous Galerkin paradigm for the second order visco-elastodynamics equation. After introducing the method, we show that the resulting space-time discontinuous Galerkin formulation is well-posed, stable and retains optimal rate of convergence with respect to the discretization parameters, namely the mesh size and the polynomial approximation degree. A set of two and three-dimensional numerical experiments confirms the theoretical bounds.},
+  file = {/Users/wujunchao/Zotero/storage/X6K5D8KX/Antonietti et al. - 2020 - A space-time discontinuous Galerkin method for the.pdf}
+}
+
 @article{argyris1969,
   title = {Finite Elements in Time and Space},
   author = {Argyris, J H and Scharpf, D W},
@@ -295,6 +310,23 @@
   file = {/Users/wujunchao/Zotero/storage/4EIWSKY3/Epstein et al. - 2024 - Applications of Space–Time Elements.pdf}
 }
 
+@article{frontin2021,
+  title = {Foundations of Space-Time Finite Element Methods: {{Polytopes}}, Interpolation, and Integration},
+  shorttitle = {Foundations of Space-Time Finite Element Methods},
+  author = {Frontin, Cory V. and Walters, Gage S. and Witherden, Freddie D. and Lee, Carl W. and Williams, David M. and Darmofal, David L.},
+  year = 2021,
+  month = aug,
+  journal = {Applied Numerical Mathematics},
+  volume = {166},
+  pages = {92--113},
+  issn = {0168-9274},
+  doi = {10.1016/j.apnum.2021.03.019},
+  urldate = {2024-02-29},
+  abstract = {The main purpose of this article is to facilitate the implementation of space-time finite element methods in four-dimensional space. In order to develop a finite element method in this setting, it is necessary to create a numerical foundation, or equivalently a numerical infrastructure. This foundation should include a collection of suitable elements (usually hypercubes, simplices, or closely related polytopes), numerical interpolation procedures (usually orthonormal polynomial bases), and numerical integration procedures (usually quadrature rules). It is well known that each of these areas has yet to be fully explored, and in the present article, we attempt to directly address this issue. We begin by developing a concrete, sequential procedure for constructing generic four-dimensional elements (4-polytopes). Thereafter, we review the key numerical properties of several canonical elements: the tesseract, tetrahedral prism, and pentatope. Here, we provide explicit expressions for orthonormal polynomial bases on these elements. Next, we construct fully symmetric quadrature rules with positive weights that are capable of exactly integrating high-degree polynomials, e.g. up to degree 17 on the tesseract. Finally, the quadrature rules are successfully tested using a set of canonical numerical experiments on polynomial and transcendental functions.},
+  keywords = {math},
+  file = {/Users/wujunchao/Zotero/storage/WIFMHCFU/Frontin et al. - 2021 - Foundations of space-time finite element methods .pdf}
+}
+
 @article{Fu2022,
   title = {再生光滑梯度无网格法动力特性研究},
   author = {付, 赛赛 and 邓, 立克 and 吴, 俊超 and 王, 东东 and 张, 灿辉},
@@ -554,6 +586,24 @@
   file = {/Users/wujunchao/Zotero/storage/3JXTZ9S7/Kolman et al. - 2024 - A review of temporal and spatial dispersions of li.pdf}
 }
 
+@book{langer2019,
+  title = {Space-{{Time Methods}}: {{Applications}} to {{Partial Differential Equations}}},
+  shorttitle = {Space-{{Time Methods}}},
+  editor = {Langer, Ulrich and Steinbach, Olaf},
+  year = 2019,
+  month = sep,
+  publisher = {De Gruyter},
+  address = {Berlin, Boston},
+  doi = {10.1515/9783110548488},
+  urldate = {2024-02-26},
+  abstract = {This volume provides an introduction to modern space-time discretization methods such as finite and boundary elements and isogeometric analysis for time-dependent initial-boundary value problems of parabolic and hyperbolic type. Particular focus is given on stable formulations, error estimates, adaptivity in space and time, efficient solution algorithms, parallelization of the solution pipeline, and applications in science and engineering.},
+  copyright = {De Gruyter expressly reserves the right to use all content for commercial text and data mining within the meaning of Section 44b of the German Copyright Act.},
+  isbn = {978-3-11-054848-8},
+  langid = {english},
+  keywords = {benchwork,oft-cited},
+  file = {/Users/wujunchao/Zotero/storage/FBYCRSFP/Space-Time Methods Applications to Partial Differential Equations.pdf}
+}
+
 @article{lejeunes2024,
   title = {A Space-Time Formulation for Time-Dependent Behaviors at Small or Finite Strains},
   author = {Lejeunes, St{\'e}phane and Eyheramendy, Dominique},
@@ -571,6 +621,23 @@
   file = {/Users/wujunchao/Zotero/storage/HT5RQ7UA/Lejeunes and Eyheramendy - 2024 - A space-time formulation for time-dependent behavi.pdf}
 }
 
+@article{li1998,
+  title = {Implementation and Adaptivity of a Space-Time Finite Element Method for Structural Dynamics},
+  author = {Li, X.D. and Wiberg, N.-E.},
+  year = 1998,
+  month = apr,
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume = {156},
+  number = {1-4},
+  pages = {211--229},
+  issn = {00457825},
+  doi = {10.1016/S0045-7825(97)00207-7},
+  urldate = {2023-10-31},
+  abstract = {In this paper we study the implementation and adaptivity of a space-time finite element method for the analysis of two-dimensional problems in structural dynamics. The method, also known as the time-discontinuous Galerkin method or the DG method, employs finite elements discretizations in space and time simultaneously with bilinear basis functions that are continuous in space and discontinuous in time. Based on using the Zienkiewicz-Zhu error estimate in space and the jumps (discontinuities) of displacements and velocities in the total energy norm as a local error estimate in time, an h-adaptive procedure which updates the spatial mesh and the time step size automatically so as to control the estimated errors within specified tolerances is proposed. Numerical examples are presented, showing that the considered DG method is of second-order accuracy in space (in L2) and third-order accuracy in time, and the adaptive procedure is capable of updating the spatial meshes and the time steps when necessary, making the solutions reliable and the computation efficient. 0 1998 Elsevier Science S.A.},
+  langid = {english},
+  file = {/Users/wujunchao/Zotero/storage/UPU7IYLV/Li and Wiberg - 1998 - Implementation and adaptivity of a space-time fini.pdf}
+}
+
 @article{Li2017,
   title = {{反应扩散方程的连续时空有限元方法}},
   author = {李, 宏 and 杜, 春瑶 and 赵, 智慧},
@@ -586,6 +653,22 @@
   abstract = {本文研究了反应扩散方程的连续时空有限元方法.首先建立了其连续时空有限元格式并证明了有限元解的存在唯一性及稳定性.然后通过引入时空投影算子在没有时空网格限制的条件下给出其近似解在节点处的，L2，，H2最优范数估计以及全局，L2（L2），L2（H2）最优范数估计.最后给出两个数值算例来验证方法的有效性与灵活性并说明结论的正确性.},
   langid = {chinese},
   file = {/Users/wujunchao/Zotero/storage/7XNJ83EL/李宏 - 2017 - 反应扩散方程的连续时空有限元方法.pdf}
+}
+
+@article{li2021,
+  title = {Multilevel Space-Time Multiplicative {{Schwarz}} Preconditioner for Parabolic Equations},
+  author = {Li, Shishun and Shao, Xinping and Chen, Rongliang},
+  year = 2021,
+  journal = {Numerical Linear Algebra with Applications},
+  volume = {28},
+  number = {6},
+  pages = {e2390},
+  issn = {1099-1506},
+  doi = {10.1002/nla.2390},
+  urldate = {2024-02-23},
+  abstract = {Space-time methods are able to solve time-dependent problems faster by exploiting the full power of high-performance computer. In this article, a multilevel space-time multiplicative Schwarz method is presented for solving parabolic equations in parallel on both spatial and temporal directions. In the implementation, the proposed Schwarz method is treated as preconditioner for GMRES, that is, a coupled system arising from the discretization of the parabolic equation is solved by using a multiplicative Schwarz preconditioned GMRES algorithm. We develop an optimal convergence theory to show that the convergence rate is bounded and independent of the spatial mesh sizes, the time step size, the number of subdomains, the number of levels, and the window size. Some numerical results obtained on a parallel computer with thousands of processors are presented to confirm the theory in terms of optimality and scalability. Moreover, numerical comparisons with traditional time-stepping algorithms show that the proposed space-time method earns lots of benefits when the number of processor cores is large.},
+  langid = {english},
+  file = {/Users/wujunchao/Zotero/storage/6CVQ22CQ/Li et al_2021_Multilevel space-time multiplicative Schwarz preconditioner for parabolic.pdf;/Users/wujunchao/Zotero/storage/I2KYA6DB/nla.html}
 }
 
 @article{lin2021,
