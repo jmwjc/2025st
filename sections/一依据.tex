@@ -15,9 +15,16 @@
 此外，时空网格能够彻底摆脱传统“张量积”形式的束缚，实现真正意义上的时空协同局部自适应加密\citess{li1998}。
 凭借上述优势，时空有限元法在流固耦合\citess{takizawa2014}、极端强冲击\citess{wriggers2024}、弹性波传播\citess{hughes1988a,antonietti2020}等复杂动力学领域展现出不可替代的应用潜力。
 
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.9\textwidth]{figures/spacetime.png}
+    \caption{时空有限元法网格划分示意图}
+    \label{fg:spacetime}
+\end{figure}
+
 然而，当前的时空有限元方法在完全非结构化网格下的适用性仍面临严峻挑战。
-\textbf{为了满足计算稳定性要求，现有方法往往被迫采用沿时间轴拉伸的半结构化网格和“时间块(Time-slab)”网格\citess{hughes1988a,hulbert1990}。}
-这种妥协严重削弱了该方法在处理复杂移动边界问题以及执行高灵活度自适应节点加密(如时空Delaunay局部加密)时的核心优势\citess{frontin2021}。
+\textbf{为了满足计算稳定性要求，现有方法往往被迫采用沿时间轴拉伸的半结构化网格和“时间块(Time-slab)”网格\citess{hughes1988a,hulbert1990}，如图 \ref{fg:spacetime} 所示。
+这种妥协严重削弱了该方法在处理复杂移动边界问题以及执行高灵活度自适应节点加密(如时空Delaunay局部加密)时的核心优势\citess{frontin2021}。}
 制约非结构化时空网格彻底走向实用的瓶颈，主要源于以下两大底层理论与数值挑战：
 
 首先是\textbf{初值问题向边值转化时，时间末端边界条件的处理机制存在理论缺陷}。
