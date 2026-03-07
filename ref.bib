@@ -965,7 +965,7 @@
   urldate = {2020-12-28},
   abstract = {Presently, it has been widely recognized that numerical integration plays a crucial role on the solution accuracy of Galerkin meshfree methods due to the rational nature of meshfree shape functions and the misalignment of shape function supports with integration cells. Nonetheless, the corresponding underlying cause is still not quite clear. To address this issue, an accuracy analysis of Galerkin meshfree methods is presented in this study with a special focus on the contribution of numerical integration to the error estimates. One important fact is that the integration difficulty of meshfree methods leads to a loss of the Galerkin orthogonality condition which usually serves as a basis to develop error bounds. In order to enable the accuracy analysis, an error measure is proposed to evaluate the loss of Galerkin orthogonality condition, which is actually related to the order of integration consistency for Galerkin meshfree formulation. With the aid of this orthogonality error measure, both H1 and L2 error estimates are established for Galerkin meshfree methods. It turns out that these errors essentially consist of two parts, one comes from the standard interpolation error, and the other one attributes to the numerical integration error. In accordance with the proposed error estimates, it is evident that for the conventional Gauss integration schemes violating the integration consistency, the solution errors eventually are controlled by the integration error and optimal convergence cannot be achieved even with high order quadrature rules. On the other hand, for the consistent integration approaches, e.g., the stabilized conforming nodal integration and the more recent reproducing kernel gradient smoothing integration, the integration and interpolation errors have the same accuracy order and thus an optimal convergence of Galerkin meshfree methods is ensured. The proposed theoretical error estimates for Galerkin meshfree methods are well demonstrated by numerical results.},
   langid = {english},
-  file = {/Users/wujc/note/? Inbox/➤ wu2021accuracy-zotero.md;/Users/wujunchao/Zotero/storage/67TRTBVZ/Wu and Wang - 2021 - An accuracy analysis of Galerkin meshfree methods .pdf}
+  file = {/Users/wujc/note/? Inbox/➤ wu2021accuracy-zotero.md;/Users/wujunchao/Zotero/storage/SRTYGJTY/Wu and Wang - 2021 - An accuracy analysis of Galerkin meshfree methods accounting for numerical integration.pdf}
 }
 
 @article{Wu2022,
@@ -1031,6 +1031,25 @@
   urldate = {2025-10-17},
   abstract = {Numerical formulations for incompressible materials often suffer from volumetric locking, which reduces the accuracy of displacement solutions and introduces oscillations in the pressure field. A well-chosen constraint ratio can mitigate this issue, but traditional approaches lack a theoretical foundation based on the inf--sup (or LBB) condition, which is essential for the stability of mixed formulations. This paper introduces a novel optimal constraint ratio derived from the inf-sup condition to address volumetric locking. The inf--sup test, a numerical tool for verifying the inf--sup condition, is reaffirmed to be equivalent to the inf--sup condition through a variational approach. By incorporating a complete polynomial space whose dimension matches the number of displacement degrees of freedom (DOFs), a new inf-sup value estimator is developed, explicitly considering the constraint ratio. For a given number of displacement DOFs, when the pressure DOFs of a numerical formulation remain below a stabilized number that falls into the optimal constraint ratio range, this numerical formulation actually satisfies the inf--sup condition. To implement the optimal constraint ratio, a mixed finite element and meshfree formulation is proposed, where displacements are discretized using traditional finite element approximations, and pressures are approximated via the reproducing kernel meshfree method. Leveraging the globally smooth reproducing kernel shape functions, the constraint ratio can be flexibly adjusted to meet the inf-sup condition without the limit of element. For computational efficiency and ease of implementation, pressure nodes are placed on selected displacement nodes to maintain the optimal constraint ratio. Inf-sup tests and a series of 2D and 3D incompressible elasticity examples validate the proposed constraint ratio, demonstrating its effectiveness in eliminating volumetric locking and enhancing the performance of mixed finite element and meshfree formulations.},
   file = {/Users/wujunchao/Zotero/storage/TGNX995D/Wu et al. - 2026 - A novel inf–sup–based volumetric constraint ratio and its implementation via mixed FE-meshfree formu.pdf}
+}
+
+@article{Wu2026a,
+  title = {{变分一致型伽辽金无网格法的最优积分域数量}},
+  author = {吴, 俊超 and 徐, 洋涛 and 王, 崇志 and 赵, 珧冰},
+  year = 2026,
+  month = feb,
+  journal = {计算力学学报},
+  volume = {43},
+  number = {1},
+  pages = {132--138,156},
+  publisher = {计算力学学报},
+  issn = {1007-4708},
+  doi = {10.7511/jslx20241006001},
+  urldate = {2026-03-05},
+  abstract = {变分一致型伽辽金无网格法满足积分约束条件,能有效解决传统伽辽金法数值积分不稳定、计算效率低的问题。为了进一步提升变分一致型伽辽金无网格法的计算效率,本文提出了变分一致型伽辽金无网格法的最优数值积分域数量。首先以赫林格-赖斯纳混合离散弱形式为基础,通过判断是否满足正定性条件,确定保证收敛性时最小积分域数量。同时,通过分析变分一致型无网格法中光滑导数的一致性条件与其自由度之间的关系,确定保证计算精度时最小积分域数量。从而建立变分一致型伽辽金无网格法的积分域优化方案。当追求计算效率时,可采用最小积分域个数的数值积分域划分方案。当同时考虑效率和精度时,可采用最优精度下的最小积分域划分方案。本文优化方案可为变分一致型伽辽金法的积分域划分提供参考,以进一步提升该方法的计算效率。最后,通过势问题和弹性力学问题验证了本文积分域优化方案的有效性。},
+  copyright = {http://creativecommons.org/licenses/by/3.0/},
+  langid = {chinese},
+  file = {/Users/wujunchao/Zotero/storage/73ZWBT8E/吴俊超 et al. - 2026 - 变分一致型伽辽金无网格法的最优积分域数量.pdf}
 }
 
 @article{WuFeng2016,
