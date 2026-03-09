@@ -1,0 +1,173 @@
+
+  <diagram name="自适应时空有限元-再生核算法流程" id="nsfc-adaptive-algorithm">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="&lt;b&gt;自适应时空有限元-再生核耦合算法流程图&lt;/b&gt;&lt;br&gt;Adaptive Space-Time FEM-RKPM Coupling Algorithm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- 开始节点 -->
+        <mxCell id="start" value="开 始&lt;br&gt;&lt;font size=&quot;10&quot;&gt;Start&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a5276;strokeColor=#154360;fontColor=#ffffff;fontFamily=SimSun;fontSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 初始化模块 -->
+        <mxCell id="init" value="&lt;b&gt;1. 初始化 (Initialize)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 生成初始空间-时间网格 &lt;i&gt;T&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;br&gt;• 布置有限元与再生核无网格节点&lt;br&gt;• 设定初始影响域半径" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#2c3e50;strokeWidth=2;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="170" width="520" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- 求解层 -->
+        <mxCell id="solve" value="&lt;b&gt;2. 求解层 (SOLVE)&lt;/b&gt;&lt;br&gt;&lt;br&gt;在当前时空网格 &lt;i&gt;T&lt;sub&gt;k&lt;/sub&gt;&lt;/i&gt; 上，求解变分一致的&lt;br&gt;混合离散弱形式，获取位移与动量解" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f6f3;strokeColor=#1e8449;strokeWidth=2.5;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="520" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 估计层 -->
+        <mxCell id="estimate" value="&lt;b&gt;3. 估计层 (ESTIMATE)&lt;/b&gt;&lt;br&gt;&lt;br&gt;依据LBB稳定性机理，计算包含"残差演化"与"局部自由度配比"的&lt;br&gt;后验误差指示器 &lt;i&gt;η&lt;sub&gt;k&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef9e7;strokeColor=#b7950b;strokeWidth=2.5;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="520" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 判断菱形 -->
+        <mxCell id="decision" value="满足全局误差&lt;br&gt;容差要求？&lt;br&gt;&lt;i&gt;η &amp;lt; ε&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fadbd8;strokeColor=#922b21;strokeWidth=2.5;fontFamily=SimSun;fontSize=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="520" y="540" width="120" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- 标记层 -->
+        <mxCell id="mark" value="&lt;b&gt;4. 标记层 (MARK)&lt;/b&gt;&lt;br&gt;&lt;br&gt;采用最大值阈值策略（或Dörfler策略）&lt;br&gt;标记局部误差过大的时空单元" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5eef8;strokeColor=#7d3c98;strokeWidth=2;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="520" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- 加密层 -->
+        <mxCell id="refine" value="&lt;b&gt;5. 加密层 (REFINE)&lt;/b&gt;&lt;br&gt;&lt;br&gt;调用 Delaunay 局部加密（或最长边二分法）&lt;br&gt;实现时空同步细化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eaf2f8;strokeColor=#2874a6;strokeWidth=2;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="790" width="520" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- 调整层 -->
+        <mxCell id="adjust" value="&lt;b&gt;6. 调整层 (ADJUST)&lt;/b&gt;&lt;br&gt;&lt;br&gt;依据网格密度变化，实时动态调整再生核无网格节点的影响域半径，&lt;br&gt;以严格满足位移-动量最优自由度配比要求（LBB稳定性）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdedec;strokeColor=#c0392b;strokeWidth=2.5;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="900" width="520" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 映射层 -->
+        <mxCell id="project" value="&lt;b&gt;7. 映射层 (PROJECT)&lt;/b&gt;&lt;br&gt;&lt;br&gt;在粗细网格间执行 &lt;i&gt;L&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt; 局部高保真投影，传递位移、动能、应变能；&lt;br&gt;并复用未加密区域的数值积分点，确保层间传递的变分一致性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8daef;strokeColor=#6c3483;strokeWidth=2;fontFamily=SimSun;fontSize=12;spacing=6;align=left;verticalAlign=top;spacingLeft=15;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1020" width="520" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 迭代计数 -->
+        <mxCell id="iterate" value="&lt;i&gt;k = k + 1&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5dbdb;strokeColor=#5f6a6a;strokeWidth=1.5;fontFamily=Times New Roman;fontSize=12;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="540" y="1140" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- 结束节点 -->
+        <mxCell id="end" value="结 束&lt;br&gt;&lt;font size=&quot;10&quot;&gt;End&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a5276;strokeColor=#154360;fontColor=#ffffff;fontFamily=SimSun;fontSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Start -> Init -->
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="start" target="init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Init -> Solve -->
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="init" target="solve">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Solve -> Estimate -->
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="solve" target="estimate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Estimate -> Decision -->
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="estimate" target="decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Decision -> End (Yes) -->
+        <mxCell id="e5" value="是&lt;br&gt;满足精度" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#229954;strokeWidth=2.5;endArrow=classic;endFill=1;fontFamily=SimSun;fontSize=11;fontColor=#229954;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="decision" target="end">
+          <mxGeometry x="0.2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 连接线：Decision -> Mark (No) -->
+        <mxCell id="e6" value="否&lt;br&gt;继续迭代" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#c0392b;strokeWidth=2;endArrow=classic;endFill=1;fontFamily=SimSun;fontSize=11;fontColor=#c0392b;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="decision" target="mark">
+          <mxGeometry x="-0.2" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 连接线：Mark -> Refine -->
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="mark" target="refine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Refine -> Adjust -->
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="refine" target="adjust">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Adjust -> Project -->
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="adjust" target="project">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 连接线：Project -> Iterate -->
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2c3e50;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="project" target="iterate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 返回循环线：Iterate -> Solve -->
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5f6a6a;strokeWidth=2;strokeDasharray=5 5;endArrow=classic;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iterate" target="solve">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="1160" />
+              <mxPoint x="280" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 图例说明 -->
+        <mxCell id="legend_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="260" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_title" value="&lt;b&gt;图例说明&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=SimSun;" vertex="1" parent="1">
+          <mxGeometry x="900" y="85" width="260" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg1" value="● 核心求解步骤" style="text;html=1;strokeColor=none;fillColor=#e8f6f3;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="110" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg2" value="● 误差估计步骤" style="text;html=1;strokeColor=none;fillColor=#fef9e7;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="135" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg3" value="● 自适应调整步骤" style="text;html=1;strokeColor=none;fillColor=#fdedec;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="160" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg4" value="● 网格操作步骤" style="text;html=1;strokeColor=none;fillColor=#eaf2f8;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="110" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg5" value="● 数据传递步骤" style="text;html=1;strokeColor=none;fillColor=#e8daef;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="135" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg6" value="● 初始化/终止" style="text;html=1;strokeColor=none;fillColor=#fadbd8;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=10;fontFamily=SimSun;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="160" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg7" value="&lt;i&gt;LBB: Ladyzhenskaya-Babuška-Brezzi 稳定性条件&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontFamily=Times New Roman;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="910" y="190" width="240" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
