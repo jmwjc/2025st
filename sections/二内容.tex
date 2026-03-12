@@ -212,4 +212,139 @@ $a$、$b$、$c$ 为双线性算子，$f$ 为线性算子。
     \item 参加国内外学术会议并作项目相关报告不少于每年6人次。
 \end{itemize}
 
+% \begin{figure}[H]
+%     \centering
+    % 设置Gantt图样式
+    % \begin{ganttchart}[
+        % 画布与网格设置
+        % x unit=0.7cm,
+        % y unit title=0.6cm,
+        % y unit chart=0.6cm,
+        % vgrid={*1{black!10, dashed}},
+        % hgrid={*1{black!10, dashed}},
+        % title height=1,
+        % title label font=\bfseries\footnotesize,
+        % bar label font=\footnotesize,
+        % group label font=\bfseries\footnotesize,
+        % 时间轴设置 (4年, 16个季度)
+        % time slot format=isodate,
+        % Group (大项) 样式
+        % group label node/.append style={align=left, left=-.5cm, text width=17em},
+        % group right shift=0,
+        % group top shift=0.6,
+        % group height=.2,
+        % group peaks width={0.2},
+        % group fill=mygroup,
+        % group draw=mygroup,
+        % Bar (子任务) 样式
+        % bar/.append style={fill=blue!50, rounded corners=4pt, draw=none},
+        % bar top shift=0.3,
+        % bar height=0.4,
+        % bar fill=blue!20,
+        % bar draw=blue,
+        % Milestone (里程碑) 样式
+        % milestone top shift=0.2,
+        % milestone height=0.6,
+        % milestone fill=red!70,
+        % milestone draw=red
+    % ]{1}{16} % 16个季度
+
+    % 年份标题
+    % \gantttitle{2027年度}{4} 
+    % \gantttitle{2028年度}{4} 
+    % \gantttitle{2029年度}{4} 
+    % \gantttitle{2030年度}{4} \\
+    % % 季度标题
+    % \gantttitlelist{1,...,16}{1} \\
+
+    % % --- 2027年度任务 ---
+    % \ganttgroup{1. 虚位移边界条件研究}{1}{4} \\
+    % \ganttbar{文献查阅与处理方案测试}{1}{2} \\ % [cite: 5]
+    % \ganttbar{理论推导与数值验证}{2}{4} \\ % [cite: 5]
+    
+    % % --- 2028年度任务 ---
+    % \ganttgroup{2. 稳定性机理与弱形式推导}{5}{8} \\
+    % \ganttbar{机理分析与最优配比确定}{5}{6} \\ % [cite: 5]
+    % \ganttbar{混合离散弱形式推导与验证}{6}{8} \\ % [cite: 5]
+
+    % % --- 2029年度任务 ---
+    % \ganttgroup{3. 无网格增稳方法建立}{9}{12} \\
+    % \ganttbar{弱形式重构与分析方法建立}{9}{10} \\ % 
+    % \ganttbar{编写通用程序与非结构网格验证}{10}{12} \\ % 
+
+    % % --- 2030年度任务 ---
+    % \ganttgroup{4. 积分方案与工程推广}{13}{16} \\
+    % \ganttbar{高维无网格数值积分方案构建}{13}{14} \\ % 
+    % \ganttbar{实际工程算例精度效率验证}{14}{15} \\ % 
+    % \ganttbar{建立科普网站与企业对接}{15}{16} \\ % 
+
+    % % --- 贯穿项目周期的任务 ---
+    % \ganttgroup{5. 成果总结与人才培养}{1}{16} \\
+    % \ganttbar{论文发表与软著申请}{2}{16} \\ % 
+    % \ganttbar{研究生培养与学术交流}{1}{16} % 
+
+    % 添加里程碑链接或依赖关系 (可选)
+    % \ganttlink{elem1}{elem2}
+
+    % \end{ganttchart}
+    % \caption{项目年度研究计划进度安排}
+    % \label{fig:gantt}
+% \end{figure}
+
+\begin{table}[!h]
+\caption{年度研究计划表}\label{tb:plan}
+\centering
+\begin{ganttchart}
+    % [
+    % inline,
+    % bar inline label anchor = north,
+    % include title in canvas=false,
+    % x unit = 18pt,
+    % y unit title = 16pt,
+    % y unit chart = 16pt,
+    % hgrid={*1{draw=black!5, line width=.75pt, dashed}},
+    % vgrid={*1{draw=black!5, line width=.75pt, dashed}},
+    % canvas/.append style={fill=none,draw=black!20,line width=.75pt},
+
+    % title/.style={draw=black!5, fill=none},
+    % title height=1,
+    % title label font=\bfseries\footnotesize,
+    % bar height = 0.3,
+    % title label node/.append style={below=0pt},
+
+    % group height=.1,
+    % group right shift=0,
+    % group top shift=0.6,
+
+    % newline shortcut=true,
+    % bar label node/.append style={align=left, anchor=north},
+    % bar/.append style={fill=blue!50, rounded corners=4pt, draw=none},
+    % group label node/.append style={align=left, left=-.5cm, text width=17em},
+    % bar label node/.append style={left=0cm,align=left,text width=15em},
+% ]
+{1}{16}
+    \gantttitle{2027年度}{4} 
+    % \gantttitle{2028年度}{4} 
+    % \gantttitle{2029年度}{4} 
+    % \gantttitle{2030年度}{4} \\
+    % \gantttitlelist{1,...,16}{1} \\
+
+%     \ganttgroup{研究内容 (1)}{1}{4} \\
+%     \ganttbar{文献查阅与处理方案测试}{1}{2} \\ % [cite: 5]
+    % \ganttgroup{\bfseries 研究内容（1）}{1}{8} \\
+    % \ganttbar{查阅相关文献，测试不同虚位移边界条件时空混合离散伽辽金法性能}{1}{4}\\
+    % \ganttbar[name=scheme1]{研究拉格朗日乘子型时域末端虚位移本质边界条件施加方案}{3}{8}\\
+    % \ganttgroup{\bfseries 研究内容（2）}{9}{20} \\
+    % \ganttbar[name=error]{推导稳定性分析局部截断误差估计}{9}{20} \\
+    % \ganttbar[name=scheme2]{构建时空混合离散再生核近似方案}{13}{16} \\
+    % \ganttgroup{\bfseries 研究内容（3）}{17}{26} \\
+    % \ganttbar[name=scheme3]{推导时空混合离散再生光滑梯度}{17}{24} \\
+    % \ganttbar[name=scheme4]{优化四维积分域再生光滑梯度积分方案}{21}{26} \\
+    % \ganttgroup{\bfseries 研究内容（4）}{21}{28} \\
+    % \ganttbar[name=method]{构建时空混合离散伽辽金无网格法}{21}{24} \\
+    % \ganttbar{引入自适应节点分布算法和并行计算优化程序}{23}{28} \\
+    % \ganttbar{成果整理、论文发表、软件著作权申请、年度报告及项目结题报告}{5}{32}
+\end{ganttchart}
+\end{table}
+
 \newpage
