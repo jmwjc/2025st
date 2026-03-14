@@ -5,38 +5,37 @@
 
 \subsubsection*{\bfseries (1) 适用于完全非结构网格的虚位移边界条件施加方法}
 针对基于哈密顿变分原理的动力学初边值问题，深入剖析传统能量泛函中时域末端虚位移本质边界条件下位移变量的求解空间。
-将传统泛函中的时间末端虚位移松弛为拉格朗日乘子，构建一种全新的拉格朗日乘子型时空能量泛函。
-随后，利用泛函分析理论，严格论证新泛函下经拉格朗日乘子法投影后的位移变量解空间与原求解空间的等价性。
-进一步地在该全新泛函框架中统一融入空间应力边界条件与初始时刻的动量边界条件，推导并建立相对应的拉格朗日乘子型伽辽金时空弱形式。
-严格验证其与连续动力学系统的欧拉--拉格朗日方程完全等价。
+将传统泛函中的虚位移作为拉格朗日乘子，构建一种全新的拉格朗日乘子型时空能量泛函。
+随后，利用泛函分析理论，论证新泛函下经拉格朗日乘子法投影后的位移求解空间与原求解空间的等价性。
+进一步地在该全新泛函框架中统一融入空间应力边界条件与初始时刻的动量边界条件，推导并建立相对应的拉格朗日乘子型时空伽辽金弱形式，验证其与欧拉--拉格朗日方程完全等价。
 
-\textbf{ 目标：开发一种在完全非结构化网格下精确施加时间末端虚位移边界条件的新机制，从根本上消除时空有限元法对“时间板(Time-slab)”网格的依赖，为后续的时空混合离散提供严洽的变分基础。 }
+\textbf{ 目标：开发一种适用于完全非结构化网格下施加时间末端虚位移边界条件的新机制，消除时空有限元法对“时间板(Time-slab)”网格的依赖，为后续的时空混合离散分析提供支撑。 }
 
 \subsubsection*{\bfseries (2) 具有最优自由度配比的再生核增稳时空混合离散方案}
 
-将勒让德变换引入哈密顿变分原理，构建位移-动量双变量的时空混合弱形式。
-在此基础上，结合完备多项式预估法，深度剖析该广义鞍点问题中的LBB稳定性条件及其在误差演化中的作用机理。
-提出采用有限元离散位移场、再生核无网格法离散动量场的新型混合离散架构；
-通过建立多变量自由度配比与LBB稳定系数的数学联系，从理论上推导并确立最优的位移-动量自由度配比准则。
-最后，借助具有已知时空精确解的基准边值问题，验证该最优配比方案在非结构时空网格中抑制虚假振荡的有效性。
+将勒让德变换引入哈密顿变分原理，构建位移--动量双变量的时空混合弱形式。
+提出采用有限元离散位移场、再生核无网格法离散动量场的混合离散架构。
+在此基础上，分析该广义鞍点问题中的LBB稳定性条件及其在误差分析中的作用机理。
+结合完备多项式预估法，建立位移--动量自由度配比与LBB稳定系数的影响机理，从理论上推导并确立最优的位移--动量自由度配比。
 
 \textbf{ 目标：建立具有最优自由度配比的再生核增稳时空混合离散方案，从LBB稳定性机理层面根除由数值色散引发的高频数值振荡。 }
+\newpage 
 
 \subsubsection*{\bfseries (3) 变分一致的再生光滑梯度时空伽辽金理论框架}
 
 基于赫林格-赖斯纳(Hellinger-Reissner)混合变分原理，重构时空混合离散伽辽金弱形式，探索满足变分一致性的位移本质边界条件施加路径。
 系统评估该过程中引入罚函数稳定项的必要性，并探究其人工惩罚参数对边界层计算精度的影响规律。
-深度剖析位移边界条件与研究内容(1)中时间末端虚位移边界条件的理论关联，实现两类边界条件在同一理论框架下的无冲突协同施加。
-进一步，依托再生光滑梯度理论与高维时空背景积分域，构造变分一致的时空无网格数值积分方案，并利用节点间积分点共享特性优化全局积分点布局，大幅削减高维计算开销。
+分析位移边界条件与研究内容(1)中时间末端虚位移边界条件施加过程的相互影响，实现两类边界条件无冲突协同施加的再生光滑梯度伽辽金理论框架。
+进一步，依托再生光滑梯度理论与高维时空背景积分域，构造变分一致的时空无网格数值积分方案，并利用积分点共享特性优化全局积分点布局，削减高维计算开销。
 
 \textbf{ 目标：构建位移与虚位移边界条件协同施加的变分一致时空混合伽辽金弱形式，并配套开发高效高维数值积分方案，全面提升算法的求解效率与鲁棒性。 }
 
 \subsubsection*{\bfseries (4) 再生核增稳时空自适应离散分析方法}
 
-依托研究内容(2)揭示的混合弱形式稳定性机理，探究局部时空自由度配比对求解精度的影响规律，构造以位移-动量自由度配比为核心的时空后验误差估计。
-基于该误差估计，提出位移--动量多变量协同自适应时空节点加密策略，联动设计局部无网格影响域的动态调整算法，以满足稳定性要求。
-针对网格重构过程，研发关键物理量在粗细网格间的高保真局部投影与数据传递技术，确保加密过程严格保持变分一致性；
-同时，深度挖掘加密前后高维数值积分点的拓扑复用潜力，进一步优化动态自适应过程的积分效率。
+依托研究内容(2)揭示的时空混合离散弱形式稳定性机理，探究局部时空自由度配比对求解精度的影响规律，构造以位移--动量自由度配比为核心的时空后验误差估计。
+基于该误差估计，提出位移--动量多变量协同自适应时空节点重构策略，联动设计局部无网格影响域的动态调整算法，以满足稳定性要求。
+针对网格重构过程，研发变量在粗细网格间的高保真局部投影与数据传递技术，确保重构过程严格保持变分一致性；
+同时，深度分析重构前后高维数值积分点的拓扑复用性，进一步优化动态自适应过程的积分效率。
 
 \textbf{ 目标：发展满足最优自由度配比与变分一致时空局部协同自适应加密技术，实现对复杂动边界及波前强梯度间断的高分辨率、高保真捕捉。}
 
@@ -56,16 +55,17 @@
 \subsubsection*{\bfseries (1) 适用于完全非结构化网格的虚位移边界条件施加方法}
 
 \textbf{\textcircled{\small 1} 变分空间差异性分析：}
-针对弹簧-质量块系统的动力方程与多维波动方程，从泛函分析的角度严格剖析传统哈密顿原理中位移试函数空间$V_h$和虚位移权函数空间$\tilde V_h$在时间末端约束上的拓扑差异。
-为了突破传统方法要求时间末端虚位移为零的限制，选取稳定性最优情况下的虚位移空间构建初始变分问题：
+考虑弹簧--质量块系统的动力方程与多维波动方程，建立哈密顿变分原理下的能量泛函及变分问题：
 寻找$u_h \in V_h$，使得 
 \begin{equation}
     a(u_h, \delta u_h) = f(\delta u_h), \quad \forall \delta u_h \in \tilde V_h
 \end{equation}
 其中，$a$ 为双线性算子，$f$ 为线性算子。
+随后，从泛函分析的角度推导不同问题中传统哈密顿原理中位移试函数空间$V_h$和虚位移权函数空间$\tilde V_h$差异。
 
-\textbf{\textcircled{\small 2} 拉格朗日乘子型泛函构建：} 创新性地将时间末端未知的虚位移$\delta u$松弛为拉格朗日乘子，构建包含投影约束条件的全新能量泛函。
-引入辅助变量$v_h \in \tilde V_h$，将原变分问题转化为如下拉格朗日乘子型伽辽金弱形式：
+\textbf{\textcircled{\small 2} 拉格朗日乘子型泛函构建：} 
+将时间末端未知的虚位移$\delta u$视为拉格朗日乘子，构建包含投影约束条件的全新能量泛函。
+引入变量$v_h \in \tilde V_h$作为原变分问题中的虚位移，将投影约束条件重新耦合至原哈密顿变分问题中，建立全新的拉格朗日乘子型伽辽金时空弱形式：
 寻找$u_h \in V_h,\; v_h \in \tilde V_h$，使得 
 \begin{equation}
     \left \{
@@ -76,9 +76,9 @@
 \end{equation}
 从上式可见，原变分问题已作为约束条件，自然耦合至系统中。
 
-\textbf{\textcircled{\small 3} 弱形式推导与等价性证明：} 将投影约束条件重新耦合至原哈密顿变分问题中，建立全新的拉格朗日乘子型伽辽金时空弱形式。引入分部积分公式处理时间导数项，严密推导相对应的欧拉-拉格朗日方程，从数学机理上证明重构后的边界条件与原动力学系统物理演化规律的完全等价性。
+\textbf{\textcircled{\small 3} 弱形式推导与等价性证明：} 引入分部积分公式处理全新伽辽金弱形式中的时间导数项，并通过虚位移$\delta u$和$\delta v$的任意性，推导相对应的欧拉-拉格朗日方程，证明重构后的控制方程与原动力方程的完全等价性。
 
-\textbf{\textcircled{\small 4} 数值验证与方案比选：} 采用一维与多维时空有限元单元分别对动力方程进行数值试验。将本方案与现有的可选方案/对比方案(如：基于时间间断伽辽金的跳跃算子法、哈密顿变作用定律的自然边界法)进行对比，验证所提方法在完全非结构化网格下初边值转化时的计算精度与无条件稳定性。
+\textbf{\textcircled{\small 4} 数值验证与方案比选：} 采用一维与多维时空有限元单元分别对动力方程进行数值试验。将本方案与现有的可选方案/对比方案(如：基于时间间断伽辽金的跳跃算子法)进行对比，验证所提方法的计算精度与稳定性。
 
 \subsubsection*{\bfseries (2) 具有最优自由度配比的再生核增稳时空混合离散方案}
 
@@ -175,35 +175,38 @@ $a$、$b$、$c$ 为双线性算子，$f$ 为线性算子。
 
 \section{\bfseries 年度研究计划}
 
+% 本项目围绕拟定的研究目标，通过理论推导和数值验证的方法研究\titlecn。
+% 根据各部分研究内容的逻辑关系，制定如下年度计划：
+
+% \subsubsection*{\bfseries 2027年度:}
+% \begin{itemize}[left=24pt]
+% \item 针对完全非结构化时空网格的拓扑限制，深入剖析传统时间末端边界条件处理方案的理论瓶颈与数值性能差异。
+% \item 完成拉格朗日乘子型时间末端虚位移本质边界条件施加方法的理论推导，并开展一维与多维动力学问题的数值试验。
+% \end{itemize}
+
+% \subsubsection*{\bfseries 2028年度:}
+% \begin{itemize}[left=24pt]
+% \item 深度剖析位移-动量混合离散广义鞍点问题中的 LBB 稳定性机理，利用完备多项式预估法推导并确立最优的多变量自由度配比准则。
+% \item 建立具有最优自由度配比的再生核增稳时空有限元-无网格混合离散方案，通过典型波动算例验证该方案在消除数值色散及高频振荡方面的有效性。
+% \end{itemize}
+
+% \subsubsection*{\bfseries 2029年度:}
+% \begin{itemize}[left=24pt]
+% \item 基于赫林格-赖斯纳变分原理与再生光滑梯度理论，重构变分一致的时空混合离散伽辽金弱形式，实现空间位移与时间虚位移边界条件的无冲突协同施加。
+% \item 面向高维(四维)时空特征构建变分一致的高效无网格数值积分方案。
+% \item 编制非结构时空网格下的通用求解程序，并完成系统的代码调试与初步验证。
+% \end{itemize}
+
+% \subsubsection*{\bfseries 2030年度:}
+% \begin{itemize}[left=24pt]
+% \item 完善面向高维弹性波、复杂移动边界及强梯度问题(结合自适应加密等机制)的无网格增稳时空混合离散分析算法，实现对极端工况的高分辨率捕捉。
+% \item 采用实际复杂工程算例全面评估所提底层算法的计算精度、鲁棒性与求解效率，形成稳定可靠且具有自主知识产权的仿真核心模块。
+% \item 建立项目科普网站与学术交流平台，开展人才培养与成果总结。
+% \item 积极推进与工业软件企业的技术对接与成果转化，按期高质量完成项目结题。
+% \end{itemize}
+
 本项目围绕拟定的研究目标，通过理论推导和数值验证的方法研究\titlecn。
-根据各部分研究内容的逻辑关系，制定如下年度计划：
-
-\subsubsection*{\bfseries 2027年度:}
-\begin{itemize}[left=24pt]
-\item 针对完全非结构化时空网格的拓扑限制，深入剖析传统时间末端边界条件处理方案的理论瓶颈与数值性能差异。
-\item 完成拉格朗日乘子型时间末端虚位移本质边界条件施加方法的理论推导，并开展一维与多维动力学问题的数值试验。
-\end{itemize}
-
-\subsubsection*{\bfseries 2028年度:}
-\begin{itemize}[left=24pt]
-\item 深度剖析位移-动量混合离散广义鞍点问题中的 LBB 稳定性机理，利用完备多项式预估法推导并确立最优的多变量自由度配比准则。
-\item 建立具有最优自由度配比的再生核增稳时空有限元-无网格混合离散方案，通过典型波动算例验证该方案在消除数值色散及高频振荡方面的有效性。
-\end{itemize}
-
-\subsubsection*{\bfseries 2029年度:}
-\begin{itemize}[left=24pt]
-\item 基于赫林格-赖斯纳变分原理与再生光滑梯度理论，重构变分一致的时空混合离散伽辽金弱形式，实现空间位移与时间虚位移边界条件的无冲突协同施加。
-\item 面向高维(四维)时空特征构建变分一致的高效无网格数值积分方案。
-\item 编制非结构时空网格下的通用求解程序，并完成系统的代码调试与初步验证。
-\end{itemize}
-
-\subsubsection*{\bfseries 2030年度:}
-\begin{itemize}[left=24pt]
-\item 完善面向高维弹性波、复杂移动边界及强梯度问题(结合自适应加密等机制)的无网格增稳时空混合离散分析算法，实现对极端工况的高分辨率捕捉。
-\item 采用实际复杂工程算例全面评估所提底层算法的计算精度、鲁棒性与求解效率，形成稳定可靠且具有自主知识产权的仿真核心模块。
-\item 建立项目科普网站与学术交流平台，开展人才培养与成果总结。
-\item 积极推进与工业软件企业的技术对接与成果转化，按期高质量完成项目结题。
-\end{itemize}
+根据各部分研究内容的逻辑关系，制定了表 \ref{tb:plan} 所示的项目的年度计划表。
 其中，成果整理、论文发表、软件著作权申请、研究生培养、年度报告及项目结题报告的撰写将贯穿于整个项目的研究过程中。预期在项目执行期内完成：
 \begin{itemize}[left=24pt]
     \item 在计算力学领域重要期刊发表论文5-9篇。
@@ -212,114 +215,30 @@ $a$、$b$、$c$ 为双线性算子，$f$ 为线性算子。
     \item 参加国内外学术会议并作项目相关报告不少于每年6人次。
 \end{itemize}
 
-% \begin{figure}[H]
-%     \centering
-    % 设置Gantt图样式
-    % \begin{ganttchart}[
-        % 画布与网格设置
-        % x unit=0.7cm,
-        % y unit title=0.6cm,
-        % y unit chart=0.6cm,
-        % vgrid={*1{black!10, dashed}},
-        % hgrid={*1{black!10, dashed}},
-        % title height=1,
-        % title label font=\bfseries\footnotesize,
-        % bar label font=\footnotesize,
-        % group label font=\bfseries\footnotesize,
-        % 时间轴设置 (4年, 16个季度)
-        % time slot format=isodate,
-        % Group (大项) 样式
-        % group label node/.append style={align=left, left=-.5cm, text width=17em},
-        % group right shift=0,
-        % group top shift=0.6,
-        % group height=.2,
-        % group peaks width={0.2},
-        % group fill=mygroup,
-        % group draw=mygroup,
-        % Bar (子任务) 样式
-        % bar/.append style={fill=blue!50, rounded corners=4pt, draw=none},
-        % bar top shift=0.3,
-        % bar height=0.4,
-        % bar fill=blue!20,
-        % bar draw=blue,
-        % Milestone (里程碑) 样式
-        % milestone top shift=0.2,
-        % milestone height=0.6,
-        % milestone fill=red!70,
-        % milestone draw=red
-    % ]{1}{16} % 16个季度
-
-    % 年份标题
-    % \gantttitle{2027年度}{4} 
-    % \gantttitle{2028年度}{4} 
-    % \gantttitle{2029年度}{4} 
-    % \gantttitle{2030年度}{4} \\
-    % % 季度标题
-    % \gantttitlelist{1,...,16}{1} \\
-
-    % % --- 2027年度任务 ---
-    % \ganttgroup{1. 虚位移边界条件研究}{1}{4} \\
-    % \ganttbar{文献查阅与处理方案测试}{1}{2} \\ % [cite: 5]
-    % \ganttbar{理论推导与数值验证}{2}{4} \\ % [cite: 5]
-    
-    % % --- 2028年度任务 ---
-    % \ganttgroup{2. 稳定性机理与弱形式推导}{5}{8} \\
-    % \ganttbar{机理分析与最优配比确定}{5}{6} \\ % [cite: 5]
-    % \ganttbar{混合离散弱形式推导与验证}{6}{8} \\ % [cite: 5]
-
-    % % --- 2029年度任务 ---
-    % \ganttgroup{3. 无网格增稳方法建立}{9}{12} \\
-    % \ganttbar{弱形式重构与分析方法建立}{9}{10} \\ % 
-    % \ganttbar{编写通用程序与非结构网格验证}{10}{12} \\ % 
-
-    % % --- 2030年度任务 ---
-    % \ganttgroup{4. 积分方案与工程推广}{13}{16} \\
-    % \ganttbar{高维无网格数值积分方案构建}{13}{14} \\ % 
-    % \ganttbar{实际工程算例精度效率验证}{14}{15} \\ % 
-    % \ganttbar{建立科普网站与企业对接}{15}{16} \\ % 
-
-    % % --- 贯穿项目周期的任务 ---
-    % \ganttgroup{5. 成果总结与人才培养}{1}{16} \\
-    % \ganttbar{论文发表与软著申请}{2}{16} \\ % 
-    % \ganttbar{研究生培养与学术交流}{1}{16} % 
-
-    % 添加里程碑链接或依赖关系 (可选)
-    % \ganttlink{elem1}{elem2}
-
-    % \end{ganttchart}
-    % \caption{项目年度研究计划进度安排}
-    % \label{fig:gantt}
-% \end{figure}
-
-\begin{table}[!h]
+\begin{table}[H]
 \caption{年度研究计划表}\label{tb:plan}
 \centering
 \begin{ganttchart}[
-    % inline,
-    % bar inline label anchor = north,
-    include title in canvas=false,
+    canvas/.append style={fill=none,draw=black,line width=.75pt},
     x unit = 16pt,
     y unit title = 14pt,
     y unit chart = 14pt,
-    hgrid={*1{draw=black!5, line width=.75pt}},
-    vgrid={*1{draw=black!5, line width=.75pt}},
-    canvas/.append style={fill=none,draw=black!20,line width=.75pt},
-    title/.style={draw=black!5, fill=none},
+    hgrid={*1{draw=black!5, line width=.75pt, dashed}},
+    vgrid={*1{draw=black!5, line width=.75pt, dashed}},
     title height=1,
-    title label font=\bfseries\footnotesize,
-    bar height=0.5,
-    group height=.1,
-    % title label node/.append style={below=0pt},
-    newline shortcut=true,
-    % bar label node/.append style={align=left, anchor=north},
+    title label font=\bfseries,
+    bar label font=\linespread{1}\selectfont,
+    bar height=1,
+    bar top shift=0.0,
     bar/.append style={fill=blue!50, rounded corners=0pt, draw=none},
     group label node/.append style={align=left, left=-.5cm, text width=17.5em},
     bar label node/.append style={left=0cm,align=left,text width=15.6em},
+    newline shortcut=true,
 ]{1}{16}
-    \gantttitle{2026}{4}
-    \gantttitle{2027}{4}
-    \gantttitle{2028}{4}
-    \gantttitle{2029}{4} \\
+    \gantttitle{2027年度}{4}
+    \gantttitle{2028年度}{4}
+    \gantttitle{2029年度}{4}
+    \gantttitle{2030年度}{4} \\
     \gantttitlelist{1,...,16}{1} \\
     \ganttgroup{\bfseries 研究内容 (1)}{1}{8} \\
     \ganttbar{$\bullet$ 变分空间差异性分析}{1}{2}\\
@@ -336,7 +255,7 @@ $a$、$b$、$c$ 为双线性算子，$f$ 为线性算子。
     \ganttbar{$\bullet$ 再生光滑梯度降维与边界协同}{11}{12} \\
     \ganttbar{$\bullet$ 四维背景积分域与高斯积分优化}{11}{12} \\
     \ganttbar{$\bullet$ 罚函数稳定项评估}{11}{12} \\
-    \ganttgroup{\bfseries 研究内容 (4)}{13}{16} \\
+    \ganttgroup{\bfseries 研究内容 (4)}{11}{16} \\
     \ganttbar{$\bullet$ 时空混合离散后验误差估计构建}{11}{13} \\
     \ganttbar{$\bullet$ 多变量协同自适应网格细化}{12}{14} \\
     \ganttbar{$\bullet$ 高保真局部投影与变分一致性传递}{12}{14} \\
@@ -346,4 +265,4 @@ $a$、$b$、$c$ 为双线性算子，$f$ 为线性算子。
 \end{ganttchart}
 \end{table}
 
-\newpage
+% \newpage
